@@ -16,6 +16,10 @@ module.exports = {
       },
     },
     extend: {
+      fontFamily: {
+        sans: ['var(--font-raleway)'],
+        mono: ['var(--font-oswald)']
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

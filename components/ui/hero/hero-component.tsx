@@ -5,6 +5,7 @@ import {ScrollTrigger} from "gsap/dist/ScrollTrigger";
 import {AnimatePresence, motion} from "framer-motion";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
+import { Button } from "../button";
 
 const slides = [
   {
@@ -130,7 +131,7 @@ gsap.registerPlugin(ScrollTrigger);
             transition={{
               duration: 0.8,
             }}
-            className="absolute w-full h-full isolate"
+            className="absolute w-full h-full "
           >
             <Image
               src={slides[currentSlide].image}
@@ -142,6 +143,9 @@ gsap.registerPlugin(ScrollTrigger);
             <h2 className="absolute top-[50%] left-[50%]  text-3xl lg:text-6xl font-bold -translate-x-[50%] -translate-y-[50%] w-fit text-white ">
               {slides[currentSlide].title}
             </h2>
+            {/* <Button className="text-xl text-white uppercase bg-transparent border border-white hover:bg-white hover:text-black">
+              Learn More
+            </Button> */}
           </motion.div>
         </AnimatePresence>
         <div className="absolute z-40 flex items-center justify-center w-full gap-x-4 bottom-5">
