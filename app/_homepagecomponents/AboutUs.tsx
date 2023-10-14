@@ -28,7 +28,7 @@ const AboutUs = () => {
         opacity: 0,
         x: "-120%",
         ease: "power3",
-        duration: 3,
+        duration: 1.8,
       });
 
       gsap.from("#about-text-one", {
@@ -40,7 +40,7 @@ const AboutUs = () => {
         x: "120%",
         ease: "power3",
         duration: 3,
-        delay: 1,
+        delay: 0.5,
       });
       gsap.from("#about-text-two", {
         scrollTrigger: "#container",
@@ -51,7 +51,7 @@ const AboutUs = () => {
         x: "120%",
         ease: "power3",
         duration: 3,
-        delay: 2,
+        delay: 1.1,
       });
 
 
