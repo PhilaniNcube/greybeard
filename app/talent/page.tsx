@@ -1,4 +1,10 @@
+import Artists from "./_components/artists";
+import TalentHero from "./_components/talent-hero";
+
 const TalenManagementPage = () => {
-  return <div>TalenManagementPage</div>;
+  return <main className="bg-black text-white">
+    <TalentHero />
+    <Artists />
+  </main>;
 };
 export default TalenManagementPage;
