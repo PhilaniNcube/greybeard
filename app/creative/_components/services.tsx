@@ -54,11 +54,11 @@ const CreativeCornerServices = () => {
   return (
     <section>
       <div className="container py-10">
-        <h2 className={cn("text-2xl md:text-3xl font-bold mb-4 text-center uppercase", oswald.className)}>Services</h2>
+        <h2 className={cn("text-2xl md:text-3xl font-bold mb-4 text-center uppercase text-blue-600", oswald.className)}>Services</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {creativeServices.map((service, index) => {
             return (
-              <Card key={index} className="flex bg-transparent text-slate-200 flex-col gap-y-3">
+              <Card key={index} className="flex bg-blue-600 text-slate-200 flex-col gap-y-3">
                 <CardHeader>
                   <CardTitle
                     className={cn(

@@ -2,7 +2,7 @@ import Artists from "./_components/artists";
 import TalentHero from "./_components/talent-hero";
 
 const TalenManagementPage = () => {
-  return <main className="bg-black text-white">
+  return <main className="">
     <TalentHero />
     <Artists />
   </main>;

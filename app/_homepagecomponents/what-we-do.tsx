@@ -25,7 +25,7 @@ const WhatWeDo = () => {
           <div className="flex flex-col justify-center items-start">
             <h2
               className={cn(
-                "text-4xl font-bold mb-4 uppercase",
+                "text-4xl font-bold mb-4 uppercase text-blue-600",
                 oswald.className
               )}
             >
@@ -65,7 +65,7 @@ const WhatWeDo = () => {
                   <Button
                     variant="outline"
                     type="button"
-                    className="uppercase font-bold"
+                    className="uppercase font-bold bg-blue-600 text-white"
                   >
                     View Page
                   </Button>
@@ -94,7 +94,7 @@ const WhatWeDo = () => {
                   <Button
                     variant="outline"
                     type="button"
-                    className="uppercase font-bold"
+                    className="uppercase font-bold bg-blue-600 text-white"
                   >
                     View Page
                   </Button>
@@ -123,7 +123,7 @@ const WhatWeDo = () => {
                   <Button
                     variant="outline"
                     type="button"
-                    className="uppercase font-bold"
+                    className="uppercase font-bold bg-blue-600 text-white"
                   >
                     View Page
                   </Button>
@@ -152,7 +152,7 @@ const WhatWeDo = () => {
                   <Button
                     variant="outline"
                     type="button"
-                    className="uppercase font-bold"
+                    className="uppercase font-bold bg-blue-600 text-white"
                   >
                     View Page
                   </Button>

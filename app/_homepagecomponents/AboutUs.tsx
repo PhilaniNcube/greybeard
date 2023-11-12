@@ -62,13 +62,13 @@ const AboutUs = () => {
 
 
   return (
-    <section ref={aboutRef} className="text-white bg-black ">
+    <section ref={aboutRef} className="bg-white text-slate-800">
       <div id="container" className="container py-6 overflow-clip">
         <div className="flex flex-col md:items-start md:flex-row">
           <h1
             id="title"
             className={cn(
-              "text-[2rem] md:text-[10rem] uppercase",
+              "text-[2rem] md:text-[10rem] uppercase text-blue-600",
               oswald.className
             )}
           >

@@ -36,7 +36,7 @@ const Hero = () => {
     <div className="absolute inset-0 bg-slate-800/40">
        <div className="container h-full flex flex-col gap-y-5 items-center justify-center py-10">
         <div className="w-fit overflow-clip">
-           <h1 className={cn("text-[3rem] lg:text-[6rem] uppercase font-extrabold", oswald.className)}>Creative Corner</h1>
+           <h1 className={cn("text-[3rem] lg:text-[6rem] uppercase text-white font-extrabold", oswald.className)}>Creative Corner</h1>
         </div>
         <Link href="/contact" className={oswald.className}><Button className="border border-white bg-transparent text-white hover:bg-white hover:text-black transition-all duration-200 rounded-none uppercase font-medium text-lg">Get In Touch</Button></Link>
        </div>

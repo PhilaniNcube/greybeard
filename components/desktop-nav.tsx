@@ -8,12 +8,12 @@ import Image from "next/image";
 
 export default function Desktop() {
   return (
-    <div className="hidden lg:flex lg:sticky top-0 z-50 bg-black shadow-md">
+    <div className="hidden lg:flex lg:sticky top-0 z-50 bg-blue-600 shadow-md">
       <nav className="container mx-auto px-6 py-4">
         <div className="md:flex md:items-center md:justify-between">
           <div className="flex justify-between items-center">
             <Link
-              className="text-lg font-semibold text-gray-50 dark:text-white"
+              className="text-lg font-semibold text-gray-50 "
               href="/"
             >
               <Image src="/images/white-logo.png" width={1323} height={542} alt="logo" className="w-44 object-cover" />
@@ -54,7 +54,7 @@ export default function Desktop() {
             </Link>
             <Link href="/contact">
               <Button
-                className="ml-8 whitespace-nowrap text-base font-medium text-gray-700 dark:text-gray-300 hover:bg-indigo-500 hover:text-white dark:hover:bg-indigo-400"
+                className="ml-8 whitespace-nowrap text-base font-medium text-gray-700 hover:bg-indigo-500 hover:text-white "
                 variant="outline"
               >
                 Get In Touch

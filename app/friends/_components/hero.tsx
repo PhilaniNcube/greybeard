@@ -40,7 +40,7 @@ const Hero = () => {
           <div className="w-fit overflow-clip">
             <h1
               className={cn(
-                "text-[3rem] lg:text-[6rem] uppercase font-extrabold",
+                "text-[3rem] lg:text-[6rem] uppercase font-extrabold text-white",
                 oswald.className
               )}
             >

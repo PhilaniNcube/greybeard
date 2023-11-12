@@ -37,7 +37,7 @@ const MarketingServices = () => {
       <div className="container py-10">
         <h2
           className={cn(
-            "text-2xl md:text-3xl font-bold mb-4 text-center uppercase",
+            "text-2xl md:text-3xl font-bold mb-4 text-center uppercase text-blue-600",
             oswald.className
           )}
         >
@@ -48,7 +48,7 @@ const MarketingServices = () => {
             return (
               <Card
                 key={index}
-                className="flex bg-transparent text-slate-200 flex-col gap-y-3"
+                className="flex bg-blue-600 text-slate-200 flex-col gap-y-3"
               >
                 <CardHeader>
                   <CardTitle

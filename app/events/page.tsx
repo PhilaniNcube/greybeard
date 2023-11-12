@@ -3,7 +3,7 @@ import EventsServices from "./_components/events-services";
 
 const EventsManagementPage = () => {
   return (
-    <main className="bg-black text-white">
+    <main className="">
       <Hero />
       <EventsServices />
     </main>

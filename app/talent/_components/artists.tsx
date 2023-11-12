@@ -1,5 +1,6 @@
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import Image from 'next/image'
+import TalentCard from "./talent-card";
 
 const artists = [
   {
@@ -53,28 +54,14 @@ const artists = [
 ];
 
 const Artists = () => {
-  return <section className="bg-black text-white">
+  return <section className="">
     <div className="container py-10">
       <h2 className="text-2xl md:text-3xl font-bold mb-4 text-center uppercase">
         Artists
       </h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         {artists.map((artist, index) => {
-          return <Card key={index} className="flex bg-transparent border-none text-slate-200 flex-col gap-y-3">
-              <CardHeader>
-                  <Image src={artist.image} alt={artist.name} width={1456} height={816} className="w-full object-cover aspect-square" />
-                <CardTitle className="text-md font-bold uppercase">
-                  {artist.name}
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <CardDescription>
-                <p className="text-sm text-white">{artist.description}</p>
-                </CardDescription>
-              </CardContent>
-              <CardFooter>
-              </CardFooter>
-            </Card>;
+          return <TalentCard key={index} talent={artist} />
         })}
       </div>
     </div>
