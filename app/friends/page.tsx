@@ -1,10 +1,8 @@
-import Friends from "./_components/artists";
-import Hero from "./_components/hero";
+import FirendsHero from "./_components/friends-hero";
 
 const page = () => {
   return <main>
-    <Hero />
-    <Friends />
+    <FirendsHero />
   </main>;
 };
 export default page;

@@ -18,10 +18,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={raleway.className}>
+      <body className={`${raleway.className} bg-black`}>
         <Desktop />
         {children}
-        </body>
+      </body>
     </html>
-  )
+  );
 }

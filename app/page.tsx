@@ -1,14 +1,11 @@
-import AboutUs from './_homepagecomponents/AboutUs'
-import WhatWeDo from './_homepagecomponents/what-we-do'
-import NewHero from './_homepagecomponents/new-hero'
+import HomeHero from "./(home)/home-hero";
+
 
 
 export default function Home() {
   return (
     <main className="">
-     <NewHero />
-     <AboutUs />
-     <WhatWeDo />
+      <HomeHero />
     </main>
   )
 }

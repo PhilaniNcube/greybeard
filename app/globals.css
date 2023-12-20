@@ -4,7 +4,7 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
+    --background: 100 100% 0%;
     --foreground: 222.2 84% 4.9%;
 
     --card: 0 0% 100%;
@@ -81,4 +81,22 @@
 
 h2 {
  @apply font-mono;
+}
+
+
+.outline-text {
+    -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+   color: transparent;
+}
+
+
+.linear-gradient {
+
+  border-style: solid;
+
+  border-width: 8px;
+
+  border-image: linear-gradient(45deg, rgb(36,50,116), rgb(212,92,92)) 1;
+
 }
