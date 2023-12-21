@@ -35,7 +35,7 @@ const FirendsHero = () => {
       <div className="container h-screen">
         <div className="flex items-center h-full justify-start">
           <div className="hidden lg:block -translate-x-[110px]">
-            <h1 className="text-4xl rotate-90 lg:text-7xl uppercase text-white font-extrabold tracking-wider">
+            <h1 className="text-4xl rotate-90 lg:text-7xl uppercase text-white font-extrabold tracking-wider line-height-7">
               Friends <br />
               Of Grey
             </h1>
