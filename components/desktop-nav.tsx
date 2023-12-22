@@ -55,11 +55,11 @@ export default function Desktop() {
             <Link
               className={cn(
                 "text-sm md:text-xl font-medium  hover:text-slate-200 transition-colors duration-200",
-                pathname === "/events" ? "text-white" : "text-slate-400"
+                pathname === "/concierge" ? "text-white" : "text-slate-400"
               )}
-              href="/events"
+              href="/concierge"
             >
-              Events
+              Concierge
             </Link>
             <Link
               className={cn(
