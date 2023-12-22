@@ -15,6 +15,7 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [    require("tailwindcss-animate"),
+    require("@tailwindcss/container-queries"),],
 }
 export default config
