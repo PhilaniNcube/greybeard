@@ -16,15 +16,15 @@ import { oswald } from "@/app/fonts";
 import { Separator } from "./ui/separator";
 
 const links = [
-  { title: "Home", href: "/"},
-  { title: "Events", href: "/events"},
-  { title: "Creative", href: "/creative"},
-  { title: "Talent", href: "/talent"},
-  { title: "Marketing", href: "/marketing"},
+  { title: "About Us", href: "/about"},
+  { title: "Friends Of Grey", href: "/friends"},
+  { title: "Clients", href: "/clients"},
+  { title: "Concierge", href: "/concierge"},
+  { title: "Get In Touch", href: "/contact"},
 ]
 
-const Navbar = () => {
-  return <nav className="fixed top-0 left-0 right-0 z-[500]">
+const MobileNavbar = () => {
+  return <nav className="lg:hidden fixed top-0 left-0 right-0 z-[500]">
     <div className="container flex items-center justify-between py-4">
       <Image src="/images/white-logo.png" width={1323} height={542} alt="Logo" className="object-cover w-36"  />
 
@@ -35,13 +35,13 @@ const Navbar = () => {
           <SheetContent >
               <SheetHeader>
                 <SheetTitle className="w-full">
-                 <Image src="/images/black_logo.png" width={1323} height={542} alt="Logo" className="object-cover w-1/2"  />
+                 {/* <Image src="/images/black_logo.png" width={1323} height={542} alt="Logo" className="object-cover w-1/2"  /> */}
                 </SheetTitle>
               </SheetHeader>
               <Separator className="my-2" />
               <div className="flex flex-col w-full mt-5 gap-y-5">
                 {links.map((link, index) => (
-                  <Link key={index} href={link.href} className={cn("text-lg md:text-2xl font-medium", oswald.className)}>
+                  <Link key={index} href={link.href} className={cn("text-lg md:text-2xl text-white font-medium", oswald.className)}>
                     {link.title}
                   </Link>
                 ))}
@@ -51,4 +51,4 @@ const Navbar = () => {
     </div>
   </nav>;
 };
-export default Navbar;
+export default MobileNavbar;
