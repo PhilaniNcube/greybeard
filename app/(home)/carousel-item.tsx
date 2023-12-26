@@ -8,7 +8,7 @@ const CarouselItem = ({
   item: { name: string; image: string; backgroundColor: string };
 }) => {
   return (
-    <div className="flex items-center justify-center relative isolate w-[10rem] sm:w-[15rem] md:w-[18rem] lg:w-[23rem] z-50 cursor-grab">
+    <div className="flex items-center justify-center mx-auto relative isolate w-[17rem] sm:w-[18rem] md:w-[20rem] lg:w-[23rem] z-50 cursor-grab">
       <div
         className={cn(
           "flex justify-center items-center relative rounded-full w-full aspect-square bg-clip-border overflow-clip",

@@ -107,9 +107,9 @@ const HomeCarousel = () => {
           onSwiper={(swiper) => console.log(swiper)}
           className="w-full relative z-40 mySwiper"
         >
-          <div className="w-[80%] mx-auto">
+          <div className="w-[80%] mx-auto ">
             {artists.map((artist, index) => (
-              <SwiperSlide key={index}>
+              <SwiperSlide className='' key={index}>
                 <CarouselItem item={artist} />
               </SwiperSlide>
             ))}
