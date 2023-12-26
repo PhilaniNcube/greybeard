@@ -83,8 +83,22 @@ const HomeCarousel = () => {
       <div className="container  flex  gap-8 justify-center h-screen overflow-clip items-center relative z-40">
         <Swiper
           modules={[Navigation, Pagination, Scrollbar, A11y]}
-          spaceBetween={50}
-          slidesPerView={3}
+          spaceBetween={20}
+          slidesPerView={1}
+          breakpoints={{
+            640: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            768: {
+              slidesPerView: 3,
+              spaceBetween: 40,
+            },
+            1024: {
+              slidesPerView: 3,
+              spaceBetween: 50,
+            },
+          }}
           autoplay={true}
           navigation={true}
           pagination={{ clickable: true }}
