@@ -5,6 +5,8 @@ import CreativeCornerModal from "./creative-corner-modal";
 import TalentManagementModal from "./talent-management-modal";
 import EventManagementModal from "./event-management-modal";
 import DigitalMarketingModal from "./digital-marketing-modal";
+import { cn } from "@/lib/utils";
+import { archivo } from "@/app/fonts";
 
 const WhatWeDo = () => {
   return (
@@ -19,7 +21,11 @@ const WhatWeDo = () => {
       <div className="container h-screen py-20 grid grid-cols-2 gap-8 relative">
         <div className="w-full" />
         <div className="w-full">
-          <h1 className="text-4xl lg:text-7xl text-white -translate-x-6 uppercase font-extrabold tracking-wider">
+          <h1
+            className={cn(
+              "text-4xl lg:text-7xl text-white -translate-x-6 uppercase font-extrabold tracking-wider"
+            , archivo.className)}
+          >
             What We Do
           </h1>
 
@@ -43,8 +49,6 @@ const WhatWeDo = () => {
             <TalentManagementModal />
             <EventManagementModal />
             <DigitalMarketingModal />
-
-
           </div>
         </div>
       </div>

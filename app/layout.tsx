@@ -1,7 +1,7 @@
 import './globals.css'
 import type { Metadata } from 'next'
 
-import { raleway } from './fonts'
+import { montserrat, raleway } from './fonts'
 import Navbar from '@/components/navbar'
 import Desktop from '@/components/desktop-nav'
 import MobileNavbar from '@/components/navbar'
@@ -19,7 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${raleway.className} bg-black`}>
+      <body className={`${montserrat.className} bg-black`}>
         <Desktop />
         <MobileNavbar />
         {children}
