@@ -22,21 +22,25 @@ import Link from "next/link";
 const artists = [
   {
     name: "Sliqe",
+    slug: "sliqe",
     image: "/images/slique.png",
     backgroundColor: "bg-gradient-to-r from-yellow-600 to-yellow-700",
   },
   {
     name: "Ntosh",
+    slug: "ntosh",
     image: "/images/ntosh.png",
     backgroundColor: "bg-gradient-to-r from-green-300 to-green-700",
   },
   {
     name: "Kele",
+    slug: "kele",
     image: "/images/kele.png",
     backgroundColor: "bg-gradient-to-r from-teal-300 to-indigo-500",
   },
   {
     name: "Si Jones",
+    slug: "si-jones",
     image: "/images/sijones.png",
     backgroundColor: "bg-gradient-to-r from-blue-600 to-blue-700",
   },
@@ -52,6 +56,7 @@ const artists = [
   // },
   {
     name: "Benjamin",
+    slug: "benjamin",
     image: "/images/benjamin.png",
     backgroundColor: "bg-gradient-to-r from-teal-600 to-teal-700",
   },
@@ -67,6 +72,7 @@ const artists = [
   // },
   {
     name: "Jack Devero",
+    slug: "jack",
     image: "/images/jack.png",
     backgroundColor: "bg-gradient-to-r from-zinc-500 to-zinc-700",
   },
@@ -80,7 +86,7 @@ const HomeCarousel = () => {
   return (
     <div className="relative">
       {" "}
-      <div className="container px-20 flex  gap-8 justify-center h-screen overflow-clip items-center relative z-40">
+      <div className="container relative z-40 flex items-center justify-center h-screen gap-8 px-20 overflow-clip">
         <Carousel
           plugins={[
             Autoplay({
@@ -99,23 +105,23 @@ const HomeCarousel = () => {
             {artists.map((artist, index) => (
               <CarouselItem
                 key={index}
-                className="relative isolate md:basis-1/2 lg:basis-1/3 group overflow-hidden"
+                className="relative overflow-hidden isolate md:basis-1/2 lg:basis-1/3 group"
               >
                 <img
-                  className="w-full object-cover aspect-square group-hover:opacity-70"
+                  className="object-cover w-full aspect-square group-hover:opacity-70"
                   src={artist.image}
                   alt={artist.name}
                 />
-                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 group-hover:z-50 flex flex-col md:flex-row items-center justify-center">
+                <div className="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 group-hover:z-50 md:flex-row">
                   <Link
-                    href={`/artists/${artist.name}`}
-                    className="text-white text-sm uppercase px-5 py-2 border border-white rounded-full"
+                    href={`/artists/${artist.slug}`}
+                    className="px-5 py-2 text-sm text-white uppercase border border-white rounded-full"
                   >
                     About {artist.name}
                   </Link>
                   <Link
-                    className="text-white text-sm border border-white rounded-full uppercase px-5 py-2 mt-5 md:mt-0 md:ml-5"
-                    href={`/artists/${artist.name}`}
+                    className="px-5 py-2 mt-5 text-sm text-white uppercase border border-white rounded-full md:mt-0 md:ml-5"
+                    href={`/contact`}
                   >
                     Book Now
                   </Link>
@@ -123,8 +129,8 @@ const HomeCarousel = () => {
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious className="bg-transparent text-white border-none h-8 w-8" />
-          <CarouselNext className="bg-transparent text-white border-none h-8 w-8" />
+          <CarouselPrevious className="w-8 h-8 text-white bg-transparent border-none" />
+          <CarouselNext className="w-8 h-8 text-white bg-transparent border-none" />
         </Carousel>
       </div>{" "}
       <h1

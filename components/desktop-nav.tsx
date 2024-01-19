@@ -3,31 +3,59 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
+import {
+  motion,
+  useMotionTemplate,
+  useMotionValue,
+  useScroll,
+  useTransform,
+} from "framer-motion";
+import useBoundedScroll from "@/hooks/useBoundedScroll";
+import { useEffect } from "react";
 
 export default function Desktop() {
 
   const pathname = usePathname();
 
+    let { scrollYBoundedProgress } = useBoundedScroll(400);
+    let scrollYBoundedProgressDelayed = useTransform(
+      scrollYBoundedProgress,
+      [1, 0.75, 0],
+      [1, 0, 0]
+    );
+
+    let item = useMotionTemplate`${useTransform(
+          scrollYBoundedProgressDelayed,
+          [1, 0.1],
+          [0, 1]
+        )})`
+
+    console.log({ value: item });
+
+
+
   return (
-    <div className="hidden lg:flex fixed top-0 left-0 right-0 z-50 shadow-md">
-      <nav className="container mx-auto px-6 py-4">
+    <motion.div
+      className="fixed top-0 left-0 right-0 z-50 hidden shadow-md lg:flex backdrop-blur-md"
+    >
+      <nav className="container px-6 py-4 mx-auto">
         <div className="md:flex md:items-center md:justify-between">
-          <div className="flex justify-between items-center ">
+          <div className="flex items-center justify-between ">
             <Link className="text-lg font-semibold text-gray-50 " href="/">
               <Image
                 src="/images/white-logo.png"
                 width={1323}
                 height={542}
                 alt="logo"
-                className="w-44 object-cover"
+                className="object-cover w-44"
               />
               <span className="sr-only">Greybeard</span>
             </Link>
           </div>
-          <div className="hidden md:flex space-x-4 items-center justify-end md:flex-1 lg:w-0 uppercase">
+          <div className="items-center justify-end hidden space-x-4 uppercase md:flex md:flex-1 lg:w-0">
             <Link
               className={cn(
-                "text-sm md:text-xl font-medium  hover:text-slate-200 transition-colors duration-200",
+                "text-sm md:text-lg font-medium  hover:text-slate-200 transition-colors duration-200",
                 pathname === "/about" ? "text-white" : "text-slate-400"
               )}
               href="/about"
@@ -36,7 +64,16 @@ export default function Desktop() {
             </Link>
             <Link
               className={cn(
-                "text-sm md:text-xl font-medium  hover:text-slate-200 transition-colors duration-200",
+                "text-sm md:text-lg font-medium  hover:text-slate-200 transition-colors duration-200",
+                pathname === "/artists" ? "text-white" : "text-slate-400"
+              )}
+              href="/artists"
+            >
+              Talent
+            </Link>
+            <Link
+              className={cn(
+                "text-sm md:text-lg font-medium  hover:text-slate-200 transition-colors duration-200",
                 pathname === "/friends" ? "text-white" : "text-slate-400"
               )}
               href="/friends"
@@ -45,7 +82,7 @@ export default function Desktop() {
             </Link>
             <Link
               className={cn(
-                "text-sm md:text-xl font-medium  hover:text-slate-200 transition-colors duration-200",
+                "text-sm md:text-lg font-medium  hover:text-slate-200 transition-colors duration-200",
                 pathname === "/clients" ? "text-white" : "text-slate-400"
               )}
               href="/clients"
@@ -54,7 +91,7 @@ export default function Desktop() {
             </Link>
             <Link
               className={cn(
-                "text-sm md:text-xl font-medium  hover:text-slate-200 transition-colors duration-200",
+                "text-sm md:text-lg font-medium  hover:text-slate-200 transition-colors duration-200",
                 pathname === "/concierge" ? "text-white" : "text-slate-400"
               )}
               href="/concierge"
@@ -63,7 +100,7 @@ export default function Desktop() {
             </Link>
             <Link
               className={cn(
-                "text-sm md:text-xl font-medium  hover:text-slate-200 transition-colors duration-200",
+                "text-sm md:text-lg font-medium  hover:text-slate-200 transition-colors duration-200",
                 pathname === "/contact" ? "text-white" : "text-slate-400"
               )}
               href="/contact"
@@ -73,6 +110,6 @@ export default function Desktop() {
           </div>
         </div>
       </nav>
-    </div>
+    </motion.div>
   );
 }

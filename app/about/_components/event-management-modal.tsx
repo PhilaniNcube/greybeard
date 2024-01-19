@@ -10,19 +10,21 @@ import {
 } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
+import { archivo } from "@/app/fonts";
+import { cn } from "@/lib/utils";
 
 const EventManagementModal = () => {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <Button className="rounded-full text-white bg-gradient-to-r from-black  px-6 uppercase text-lg to-yellow-400">
-        Event Management
+        <Button className="px-6 text-lg text-white uppercase rounded-full bg-gradient-to-r from-black to-yellow-400">
+          Event Management
         </Button>
       </DialogTrigger>
-      <DialogContent className="text-white backdrop-blur-lg bg-transparent backdrop-opacity-5 w-full">
-        <div className="w-full flex items-end bg-transparent backdrop-opacity-5">
+      <DialogContent className="w-full text-white bg-transparent backdrop-blur-lg backdrop-opacity-5">
+        <div className="flex items-end w-full bg-transparent backdrop-opacity-5">
           <div>
-            <ul className="text-lg leading-9 font-medium">
+            <ul className="text-lg font-medium leading-9">
               <li>Promotional Activations</li>
               <li>Brand/Product Launches</li>
               <li>Live Shows</li>
@@ -35,8 +37,13 @@ const EventManagementModal = () => {
           </div>
         </div>{" "}
         <Separator className="my-3" />
-        <h3 className="text-2xl px-6 text-white -translate-x-6 uppercase font-extrabold tracking-wider">
-        Event Management
+        <h3
+          className={cn(
+            "text-2xl px-6 text-white -translate-x-6 uppercase font-extrabold tracking-wider",
+            archivo.className
+          )}
+        >
+          Event Management
         </h3>
       </DialogContent>
     </Dialog>
