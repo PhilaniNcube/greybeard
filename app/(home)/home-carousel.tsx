@@ -16,6 +16,7 @@ import Autoplay from "embla-carousel-autoplay";
 import { cn } from '@/lib/utils';
 import { archivo } from '../fonts';
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 
 
@@ -84,7 +85,7 @@ const HomeCarousel = () => {
 
 
   return (
-    <div className="relative">
+    <div className="relative overflow-hidden">
       {" "}
       <div className="container relative z-40 flex items-center justify-center h-screen gap-8 px-20 overflow-clip">
         <Carousel
@@ -133,7 +134,10 @@ const HomeCarousel = () => {
           <CarouselNext className="w-8 h-8 text-white bg-transparent border-none" />
         </Carousel>
       </div>{" "}
-      <h1
+      <motion.h1
+        initial={{ opacity: 0, x: -100 }}
+        animate={{ opacity: 1, x:0 }}
+        transition={{ duration: 1.6 }}
         className={cn(
           "text-4xl lg:text-6xl text-white uppercase font-extrabold absolute bottom-0 left-20 z-50",
           archivo.className
@@ -141,7 +145,7 @@ const HomeCarousel = () => {
       >
         Where brands <br />
         <span className="outline-text">meet creatives</span>{" "}
-      </h1>
+      </motion.h1>
     </div>
   );
 };

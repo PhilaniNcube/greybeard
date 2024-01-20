@@ -21,7 +21,7 @@ const Artists = () => {
             </h2>
             <Link
               className="px-3 py-1 mt-3 text-white uppercase border border-white rounded-full hover:bg-white hover:text-black w-fit"
-              href={`/${artist.slug}`}
+              href={`/artists/${artist.slug}`}
             >
               About {artist.name}
             </Link>

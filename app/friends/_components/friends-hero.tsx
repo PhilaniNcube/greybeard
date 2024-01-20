@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
-
+"use client"
+import {motion} from "framer-motion";
 import { Button } from "@/components/ui/button";
 
 const friends = [
@@ -33,29 +34,33 @@ const FirendsHero = () => {
   return (
     <section className="pt-20">
       <div className="container h-screen">
-        <div className="flex items-center h-full justify-start">
+        <div className="flex items-center justify-start h-full">
           <div className="hidden lg:block -translate-x-[110px]">
-            <h1 className="text-4xl rotate-90 lg:text-7xl uppercase text-white font-extrabold tracking-wider line-height-7">
+            <motion.h1
+             initial={{ opacity: 0, color: "#000000" }}
+             animate={{ opacity: 1, color: "#ffffff" }}
+              transition={{ duration: 1.6 }}
+            className="text-4xl font-extrabold tracking-wider text-white uppercase rotate-90 lg:text-7xl line-height-7">
               Friends <br />
               Of Grey
-            </h1>
+            </motion.h1>
           </div>
-          <div className="flex-1 flex-shrink-0 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+          <div className="grid flex-1 flex-shrink-0 grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3">
             {friends.map((item, index) => (
               <div key={index}>
-                <div className="linear-gradient aspect-square relative group">
+                <div className="relative linear-gradient aspect-square group">
                   <img
                     src={item.image}
                     alt={item.name}
                     className="object-cover object-center w-full h-full"
                   />
-                  <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all">
-                    <Button type="button" className="bg-transparent border-4 border-white rounded-full text-white">
+                  <div className="absolute inset-0 flex items-center justify-center transition-all bg-black bg-opacity-50 opacity-0 group-hover:opacity-100">
+                    <Button type="button" className="text-white bg-transparent border-4 border-white rounded-full">
                       Book Bow
                     </Button>
                   </div>
                 </div>
-                <h2 className="text-white text-2xl font-bold uppercase text-center">{item.name}</h2>
+                <h2 className="text-2xl font-bold text-center text-white uppercase">{item.name}</h2>
               </div>
             ))}
           </div>
