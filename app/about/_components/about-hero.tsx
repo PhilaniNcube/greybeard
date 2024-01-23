@@ -1,6 +1,6 @@
 "use client"
 
-import { archivo } from "@/app/fonts";
+import { agrandir } from "@/app/fonts";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
@@ -24,7 +24,7 @@ const AboutHero = () => {
           transition={{ duration: 1.6 }}
           className={cn(
             "text-4xl lg:text-7xl text-white uppercase mb-6 font-extrabold tracking-wider",
-            archivo.className
+            agrandir.className
           )}
         >
           About

@@ -6,7 +6,7 @@ import TalentManagementModal from "./talent-management-modal";
 import EventManagementModal from "./event-management-modal";
 import DigitalMarketingModal from "./digital-marketing-modal";
 import { cn } from "@/lib/utils";
-import { archivo } from "@/app/fonts";
+import { agrandir } from "@/app/fonts";
 
 const WhatWeDo = () => {
   return (
@@ -24,7 +24,7 @@ const WhatWeDo = () => {
           <h1
             className={cn(
               "text-4xl lg:text-7xl text-white -translate-x-6 uppercase font-extrabold tracking-wider"
-            , archivo.className)}
+            , agrandir.className)}
           >
             What We Do
           </h1>

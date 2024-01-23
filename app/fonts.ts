@@ -1,4 +1,6 @@
 import { Oswald, Raleway , Archivo_Black, Montserrat} from "next/font/google";
+import localFont from "next/font/local";
+
 
 export const oswald = Oswald({
   subsets: ["latin"],
@@ -21,6 +23,22 @@ export const montserrat = Montserrat({
 export const archivo = Archivo_Black({
 weight: "400",
 display: "swap",
-variable: "--font-archivo",
+variable: "--font-agrandir",
 subsets: ["latin"]
+})
+
+
+export const agrandir = localFont({
+  src: [
+    {
+      path: '../public/fonts/Agrandir-Regular.otf',
+      weight: '400',
+      style: 'normal',
+    },
+    {
+      path: '../public/fonts/Agrandir-GrandHeavy.otf',
+      weight: '700',
+      style: 'normal',
+    },
+  ],
 })

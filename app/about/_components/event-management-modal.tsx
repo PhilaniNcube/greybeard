@@ -10,7 +10,7 @@ import {
 } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
-import { archivo } from "@/app/fonts";
+import { agrandir } from "@/app/fonts";
 import { cn } from "@/lib/utils";
 
 const EventManagementModal = () => {
@@ -40,7 +40,7 @@ const EventManagementModal = () => {
         <h3
           className={cn(
             "text-2xl px-6 text-white -translate-x-6 uppercase font-extrabold tracking-wider",
-            archivo.className
+            agrandir.className
           )}
         >
           Event Management

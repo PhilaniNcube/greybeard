@@ -14,7 +14,7 @@ import {
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
 import { cn } from '@/lib/utils';
-import { archivo } from '../fonts';
+import { agrandir } from '../fonts';
 import Link from "next/link";
 import { motion } from "framer-motion";
 
@@ -140,7 +140,7 @@ const HomeCarousel = () => {
         transition={{ duration: 1.6 }}
         className={cn(
           "text-4xl lg:text-6xl text-white uppercase font-extrabold absolute bottom-0 left-20 z-50",
-          archivo.className
+          agrandir.className
         )}
       >
         Where brands <br />

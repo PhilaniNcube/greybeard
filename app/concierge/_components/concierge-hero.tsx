@@ -1,4 +1,4 @@
-import { archivo } from "@/app/fonts";
+import { agrandir } from "@/app/fonts";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 
@@ -17,7 +17,7 @@ const ConciergeHero = () => {
           <h1
             className={cn(
               "text-4xl font-bold text-center text-white lg:text-6xl uppercase"
-            , archivo.className)}
+            , agrandir.className)}
           >
             Greybeard Concierge
           </h1>

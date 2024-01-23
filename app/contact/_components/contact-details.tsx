@@ -1,4 +1,4 @@
-import { archivo } from "@/app/fonts";
+import { agrandir } from "@/app/fonts";
 import { cn } from "@/lib/utils";
 import { Facebook, Instagram, Mail, MailIcon, MapIcon, PhoneIcon, PinIcon, SmartphoneIcon, Twitter } from "lucide-react";
 import Link from "next/link";
@@ -59,14 +59,18 @@ const ContactDetails = () => {
           <h1
             className={cn(
               "text-white font-extrabold text-5xl lg:text-[9rem] uppercase",
-              archivo.className
+              agrandir.className
             )}
           >
             Let&apos;s <br className="hidden lg:block" />
             <span className="lg:text-[12rem]">Get</span>
           </h1>
 
-          <h2 className="text-5xl font-extrabold text-white uppercase lg:text-7xl outline-text">
+          <h2
+            className={cn(
+              "text-5xl font-extrabold text-white uppercase lg:text-7xl outline-text"
+            , agrandir.className)}
+          >
             In Touch
           </h2>
         </div>

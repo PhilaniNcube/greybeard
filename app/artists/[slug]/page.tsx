@@ -1,4 +1,4 @@
-import { archivo } from "@/app/fonts";
+import { agrandir } from "@/app/fonts";
 import artists from "@/artists";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
@@ -31,7 +31,7 @@ const ArtistPage = ({params:{slug}}:{params:{slug:string}}) => {
           <h1
             className={cn(
               "text-5xl font-bold uppercase text-white",
-              archivo.className
+              agrandir.className
             )}
           >
             {artist?.name}

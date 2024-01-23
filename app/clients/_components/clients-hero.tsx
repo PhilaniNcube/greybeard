@@ -1,3 +1,5 @@
+import { agrandir } from "@/app/fonts";
+import { cn } from "@/lib/utils";
 import Image from "next/image";
 
 const ClientsHero = () => {
@@ -12,7 +14,12 @@ const ClientsHero = () => {
       />
       <div className="h-screen bg-gradient-to-b from-transparent to-slate-700/80 relative">
         <div className="flex container flex-col justify-center lg:justify-end h-full">
-          <h1 className="text-4xl lg:text-[9rem] lg:-translate-y-20 text-white uppercase tracking-wide font-extrabold z-50">
+          <h1
+            className={cn(
+              "text-2xl lg:text-[7rem] lg:-translate-y-20 text-white uppercase tracking-wide font-extrabold z-50",
+              agrandir.className
+            )}
+          >
             Our
             <span className="outline-text"> Clients</span>{" "}
           </h1>
