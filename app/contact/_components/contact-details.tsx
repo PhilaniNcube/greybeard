@@ -1,6 +1,6 @@
 import { archivo } from "@/app/fonts";
 import { cn } from "@/lib/utils";
-import { Facebook, Instagram, MailIcon, PhoneIcon, SmartphoneIcon, Twitter } from "lucide-react";
+import { Facebook, Instagram, Mail, MailIcon, MapIcon, PhoneIcon, PinIcon, SmartphoneIcon, Twitter } from "lucide-react";
 import Link from "next/link";
 
 const ContactDetails = () => {
@@ -11,15 +11,15 @@ const ContactDetails = () => {
           <p className="mb-10 text-2xl tracking-wider">Say Hello...</p>
           <Link
             href="mailto:info@greybeardpro.co.za"
-            className="flex items-center mb-10 text-2xl tracking-wider gap-x-3"
+            className="flex items-center mb-10 text-md tracking-wider gap-x-3"
             prefetch={false}
           >
-            <MailIcon className="w-6 h-6" />
+            <Mail className="w-6 h-6" />
             info@greybeardpro.co.za
           </Link>
           <Link
             href="tel:+27714167448"
-            className="flex items-center mb-10 text-2xl tracking-wider gap-x-3"
+            className="flex items-center mb-10 text-md tracking-wider gap-x-3"
             prefetch={false}
           >
             <PhoneIcon className="w-6 h-6" />
@@ -27,18 +27,22 @@ const ContactDetails = () => {
           </Link>
           <Link
             href="https://wa.me/27714167448"
-            className="flex items-center mb-10 text-2xl tracking-wider gap-x-3"
+            className="flex items-center mb-10 text-md tracking-wider gap-x-3"
             prefetch={false}
           >
             <SmartphoneIcon className="w-6 h-6" />
             Whatsapp
           </Link>
-          <p className="mt-5 mb-10 text-2xl tracking-wider">
-            4 Antrim Road <br />
-            Bryanston <br />
-            Johannesburg <br />
-            2191
-          </p>
+          <div className="flex items-start mb-10 text-md tracking-wider gap-x-3">
+            <MapIcon className="w-6 h-6" />
+            <p className=" mb-10 text-md tracking-wider">
+              4 Antrim Road <br />
+              Bryanston <br />
+              Johannesburg <br />
+              2191
+            </p>
+          </div>
+
           <div className="flex items-center gap-x-3">
             <Link href="www.facebook.com/">
               <Facebook className="w-12 h-12" />

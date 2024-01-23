@@ -35,9 +35,7 @@ export default function Desktop() {
 
 
   return (
-    <motion.div
-      className="fixed top-0 left-0 right-0 z-50 hidden shadow-md lg:flex backdrop-blur-md"
-    >
+    <motion.div className="fixed top-0 left-0 right-0 z-50 hidden shadow-md lg:flex backdrop-blur-md">
       <nav className="container px-6 py-4 mx-auto">
         <div className="md:flex md:items-center md:justify-between">
           <div className="flex items-center justify-between ">
@@ -61,6 +59,15 @@ export default function Desktop() {
               href="/about"
             >
               About Us
+            </Link>{" "}
+            <Link
+              className={cn(
+                "text-sm md:text-lg font-medium  hover:text-slate-200 transition-colors duration-200",
+                pathname === "/clients" ? "text-white" : "text-slate-400"
+              )}
+              href="/clients"
+            >
+              Clients
             </Link>
             <Link
               className={cn(
@@ -79,15 +86,6 @@ export default function Desktop() {
               href="/friends"
             >
               Friends Of Grey
-            </Link>
-            <Link
-              className={cn(
-                "text-sm md:text-lg font-medium  hover:text-slate-200 transition-colors duration-200",
-                pathname === "/clients" ? "text-white" : "text-slate-400"
-              )}
-              href="/clients"
-            >
-              Clients
             </Link>
             <Link
               className={cn(

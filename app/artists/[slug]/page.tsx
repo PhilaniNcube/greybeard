@@ -18,7 +18,7 @@ const ArtistPage = ({params:{slug}}:{params:{slug:string}}) => {
     >
       <div
         className={cn(
-          "grid grid-cols-1 gap-10 md:grid-cols-2 relative py-26 container"
+          "grid grid-cols-1 gap-10 md:grid-cols-2 relative py-36 container"
         )}
       >
         <Image

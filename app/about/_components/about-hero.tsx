@@ -28,7 +28,7 @@ const AboutHero = () => {
           )}
         >
           About
-          <span className="outline-text">us</span>{" "}
+          <span className="ml-2 outline-text"> us</span>
         </motion.h1>
         <motion.p
           initial={{ opacity: 0, x: 100 }}
@@ -43,12 +43,12 @@ const AboutHero = () => {
           cornerstone of a progressive urban culture that benefits all.
         </motion.p>
         <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1.6 }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1.6 }}
         >
           <Button className="px-4 mt-2 text-xl font-bold text-white uppercase rounded-full w-fit bg-gradient-to-r from-sky-600 via-purple-500 to-indigo-800">
-            <Link href="#">Read More</Link>
+            <Link href="/clients">Read More</Link>
           </Button>
         </motion.div>
       </div>
