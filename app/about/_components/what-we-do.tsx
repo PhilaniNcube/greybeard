@@ -10,17 +10,17 @@ import { agrandir } from "@/app/fonts";
 
 const WhatWeDo = () => {
   return (
-    <section className="relative h-screen">
+    <section className="relative h-screen" id="what-we-do">
       <Image
         src="/images/visor.webp"
         width={1920}
         height={1080}
         alt="Background"
-        className="absolute inset-0 w-full object-cover object-top"
+        className="absolute inset-0 w-full object-cover object-top hidden lg:block"
       />
       <div className="container h-screen py-20 grid grid-cols-2 gap-8 relative">
-        <div className="w-full" />
-        <div className="w-full">
+        <div className="w-full hidden lg:block" />
+        <div className="w-full col-span-2 lg:col-span-1">
           <h1
             className={cn(
               "text-4xl lg:text-7xl text-white -translate-x-6 uppercase font-extrabold tracking-wider"

@@ -17,7 +17,7 @@ const AboutHero = () => {
         alt="Background"
         className="absolute inset-0 object-cover object-right w-full h-screen aspect-video"
       />
-      <div className="container h-screen py-20 flex flex-col translate-x-[250px] justify-center relative">
+      <div className="container h-screen py-20 flex flex-col lg:translate-x-[250px] justify-center relative">
         <motion.h1
           initial={{ opacity: 0, x: -100 }}
           animate={{ opacity: 1, x: 0 }}
@@ -48,7 +48,7 @@ const AboutHero = () => {
           transition={{ duration: 1.6 }}
         >
           <Button className="px-4 mt-2 text-xl font-bold text-white uppercase rounded-full w-fit bg-gradient-to-r from-sky-600 via-purple-500 to-indigo-800">
-            <Link href="/clients">Read More</Link>
+            <Link href="#what-we-do">Read More</Link>
           </Button>
         </motion.div>
       </div>

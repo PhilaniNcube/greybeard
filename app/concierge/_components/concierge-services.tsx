@@ -12,7 +12,7 @@ const services =[
     image: "images/party.webp",
   },
   {
-    name: "German Sedans & Mercedes Benz V Classes",
+    name: "German Sedans &  V Classes",
     image: "images/cars.webp",
   },
 
@@ -28,8 +28,8 @@ const ConciergeServices = () => {
         </h2>
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 md:gap-16">
           {services.map((service, index) => (
-            <div className="w-full group" key={index}>
-              <h3 className="mb-3 text-3xl font-semibold text-center text-balance line-clamp-2">
+            <div className="w-full group flex flex-col justify-between" key={index}>
+              <h3 className="mb-3 text-lg  font-semibold text-center text-balance line-clamp-2">
                 {service.name}
               </h3>
               <div className="relative">

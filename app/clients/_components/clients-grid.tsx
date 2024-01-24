@@ -26,7 +26,7 @@ const clients = [
 ];
 
 const ClientsGrid = () => {
-  return <section className="relative">
+  return <section className="relative" id="clients">
     <Image
         src="/images/hands.webp"
         width={1920}
