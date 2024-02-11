@@ -28,8 +28,8 @@ const ConciergeServices = () => {
         </h2>
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 md:gap-16">
           {services.map((service, index) => (
-            <div className="w-full group flex flex-col justify-between" key={index}>
-              <h3 className="mb-3 text-lg  font-semibold text-center text-balance line-clamp-2">
+            <div className="flex flex-col justify-between w-full group" key={service.name}>
+              <h3 className="mb-3 text-lg font-semibold text-center text-balance line-clamp-2">
                 {service.name}
               </h3>
               <div className="relative">
@@ -42,7 +42,7 @@ const ConciergeServices = () => {
 
               <div className="absolute inset-0 flex-col items-center justify-center hidden px-4 text-center text-white group-hover:flex">
                 <Link href="/contact" prefetch={false}>
-                  <Button variant="outline" className="font-bold uppercase bg-white border-2 border-white rounded-full  text-slate-900">Enquire</Button>
+                  <Button variant="outline" className="font-bold uppercase bg-white border-2 border-white rounded-full text-slate-900">Enquire</Button>
                 </Link>
               </div>
                 </div>

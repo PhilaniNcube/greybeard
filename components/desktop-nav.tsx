@@ -17,14 +17,14 @@ export default function Desktop() {
 
   const pathname = usePathname();
 
-    let { scrollYBoundedProgress } = useBoundedScroll(400);
-    let scrollYBoundedProgressDelayed = useTransform(
+    const { scrollYBoundedProgress } = useBoundedScroll(400);
+    const scrollYBoundedProgressDelayed = useTransform(
       scrollYBoundedProgress,
       [1, 0.75, 0],
       [1, 0, 0]
     );
 
-    let item = useMotionTemplate`${useTransform(
+    const item = useMotionTemplate`${useTransform(
           scrollYBoundedProgressDelayed,
           [1, 0.1],
           [0, 1]
@@ -86,6 +86,15 @@ export default function Desktop() {
               href="/friends"
             >
               Friends Of Grey
+            </Link>
+            <Link
+              className={cn(
+                "text-sm md:text-lg font-medium  hover:text-slate-200 transition-colors duration-200",
+                pathname === "/events" ? "text-white" : "text-slate-400"
+              )}
+              href="/events"
+            >
+              Events
             </Link>
             <Link
               className={cn(

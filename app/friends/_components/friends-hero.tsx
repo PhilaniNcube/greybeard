@@ -8,15 +8,15 @@ import { agrandir } from "@/app/fonts";
 const friends = [
   {
     name: "Stino Le Thewnny",
-    image: "/images/stino.webp",
+    image: "/images/friends/stino.png",
   },
   {
     name: "Sipho Muchindu",
-    image: "/images/sipho.webp",
+    image: "/images/friends/sipho.png",
   },
   {
     name: "Heavy K",
-    image: "/images/heavyk.png",
+    image: "/images/friends/heavy.png",
   },
   {
     name: "The Black Wendy",
@@ -24,11 +24,11 @@ const friends = [
   },
   {
     name: "Henny Be Lit",
-    image: "/images/henry.webp",
+    image: "/images/friends/henny.png",
   },
   {
     name: "Fort Noks",
-    image: "/images/noks.webp",
+    image: "/images/friends/noks.png",
   }
 ]
 
@@ -52,8 +52,8 @@ const FirendsHero = () => {
           </div>
           <div className="grid flex-1 flex-shrink-0 grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3">
             {friends.map((item, index) => (
-              <div key={index}>
-                <div className="relative linear-gradient aspect-square group">
+              <div key={item.name} className="w-full">
+                <div className="relative aspect-square group">
                   <img
                     src={item.image}
                     alt={item.name}
