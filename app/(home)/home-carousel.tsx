@@ -55,12 +55,12 @@ const artists = [
   //   image: "/images/just6.webp",
   //   backgroundColor: "bg-gradient-to-r from-slate-200 to-slate-400",
   // },
-  {
-    name: "Benjahmin",
-    slug: "benjamin",
-    image: "/images/benjamin.png",
-    backgroundColor: "bg-gradient-to-r from-teal-600 to-teal-700",
-  },
+  // {
+  //   name: "Benjahmin",
+  //   slug: "benjamin",
+  //   image: "/images/benjamin.png",
+  //   backgroundColor: "bg-gradient-to-r from-teal-600 to-teal-700",
+  // },
   // {
   //   name: "Heavy K",
   //   image: "/images/heavyk.png",

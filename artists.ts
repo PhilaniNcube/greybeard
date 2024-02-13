@@ -59,18 +59,18 @@ const artists = [
     },
      backgroundColor: "linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(43,187,145,1) 100%)",
   },
-  {
-    name: "Benjahmin The Faff",
-    slug: "benjamin",
-    image: "/images/talent/ben.png",
-    description: "Part of an elite customisation movement in the city of Joburg, BenjahminTheFaff produces the freshest and hottest designs. From shoes to denim, anything he puts his brush to conveys uniqueness and flair. His artwork is one of one making them rare pieces of art that aren’t mass produced but rather curated for an individual’s unique style and personality. BenjahminTheFaff uses his art to illustrate Africa through his eyes. He believes that a career as an artist is possible in Africa and strives to show case this through his work and dedication to his craft. Born in Kenya and raised in South Africa, his exposure to culture on both ends has allowed him to hone in on his skill. His work spans from Converse, Jameson, J&B, Shesha, Nike and Nandos to name a few.",
-    socials: {
-      twitter: "https://twitter.com/kele_megano",
-      instagram: "https://www.instagram.com/kele_megano",
-      facebook: "https://www.facebook.com/Kele Megano"
-    },
-      backgroundColor: "linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 100%)",
-  },
+  // {
+  //   name: "Benjahmin The Faff",
+  //   slug: "benjamin",
+  //   image: "/images/talent/ben.png",
+  //   description: "Part of an elite customisation movement in the city of Joburg, BenjahminTheFaff produces the freshest and hottest designs. From shoes to denim, anything he puts his brush to conveys uniqueness and flair. His artwork is one of one making them rare pieces of art that aren’t mass produced but rather curated for an individual’s unique style and personality. BenjahminTheFaff uses his art to illustrate Africa through his eyes. He believes that a career as an artist is possible in Africa and strives to show case this through his work and dedication to his craft. Born in Kenya and raised in South Africa, his exposure to culture on both ends has allowed him to hone in on his skill. His work spans from Converse, Jameson, J&B, Shesha, Nike and Nandos to name a few.",
+  //   socials: {
+  //     twitter: "https://twitter.com/kele_megano",
+  //     instagram: "https://www.instagram.com/kele_megano",
+  //     facebook: "https://www.facebook.com/Kele Megano"
+  //   },
+  //     backgroundColor: "linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 100%)",
+  // },
 ]
 
 
