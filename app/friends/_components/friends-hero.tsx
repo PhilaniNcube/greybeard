@@ -35,7 +35,7 @@ const friends = [
 const FirendsHero = () => {
   return (
     <section className="pt-20">
-      <div className="container h-screen">
+      <div className="container min-h-screen">
         <div className="flex items-center justify-start h-full">
           <div className="hidden lg:block -translate-x-[110px]">
             <motion.h1
@@ -50,10 +50,10 @@ const FirendsHero = () => {
               Of Grey
             </motion.h1>
           </div>
-          <div className="grid flex-1 flex-shrink-0 grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="grid flex-1 flex-shrink-0 grid-cols-1 gap-10 py-20 sm:grid-cols-2 lg:grid-cols-3">
             {friends.map((item, index) => (
               <div key={item.name} className="w-full">
-                <div className="relative aspect-square group">
+                <div className="relative isolate aspect-square group">
                   <img
                     src={item.image}
                     alt={item.name}
