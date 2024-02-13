@@ -53,7 +53,7 @@ const Artists = () => {
             ))}
           </div>
 
-					<div className="relative md:flex min-h-[500px] max-w-[60%] hidden mx-auto">
+					<div className="relative md:flex min-h-[500px] max-w-[80%] hidden mx-auto">
 						{artists.map((artist, index) => (
 							<Link
 								href={`/artists/${artist.slug}`}
@@ -68,7 +68,7 @@ const Artists = () => {
 							>
 								<img
 									className={cn(
-										"object-contain w-[240px] h-[350px] group-hover:scale-110 transition-transform duration-300 z-50",
+										"object-contain w-full scale-150 h-[350px]  group-hover:scale-180 transition-transform duration-300 z-50",
 										`z-[${index}]`,
 									)}
 									src={artist.image}
