@@ -1,4 +1,15 @@
-const artists = [
+const artists = [  {
+    name: "Kele",
+    slug: "kele",
+    image: "/images/talent/kele.png",
+    description: "A qualified chef by profession, a DJ out of passion, and an influencer by people’s choice. Kele is not just skilled in the kitchen but on the decks, cooking and serving flavour not only on dinner tables but the dance floor as well. This 24-year-old bubbly and full of life personality credits her great ear and love for music to her parents. Making her a versatile DJ.",
+    socials: {
+      twitter: "https://twitter.com/kele_megano",
+      instagram: "https://www.instagram.com/kele_megano",
+      facebook: "https://www.facebook.com/Kele Megano"
+    },
+    backgroundColor:"linear-gradient(90deg, rgba(210,71,53,1) 0%, rgba(145,20,3,1) 35%)",
+  },
   {
     name: "Sliqe",
     slug: "sliqe",
@@ -10,6 +21,39 @@ const artists = [
       facebook: "https://www.facebook.com/DJSliqe/"
     },
     backgroundColor: "linear-gradient(90deg, rgba(100,71,53,1) 0%, rgba(115,50,53,1) 35%)",
+  },  {
+    name: "Black Wendy",
+    slug: "blac-wendy",
+    image: "/images/talent/wendy.png",
+    description: "Born in Mthatha Eastern Cape, South Africa; Si Jones’s career began in 2012 at Rhodes University. Her undeniable passion for entertainment along with her eclectic and vibrant personality led her into joining Rhodes Music Radio (RMR), where she learnt the skills of being a DJ and an On-Air radio presenter. Si Jones's music has been featured and playlisted on various commercial radio stations such as Metro FM, Ligwalagwala FM, 947, Radio 2000, Ukhozi FM, Tru FM, YFM, Cliff Central, Massive Metro to name a few. She has MC'd and DJ'd across South Africa, and sharing stages with the likes of Black Motion, Heavy K, Oskido, Shimza, DJ Zinhle and many more other “heavyweights” in the industry. During her 3-year period at RMR, Si Jones has presented 3 radioshows and has been the content producer for 2 of those shows",
+    socials: {
+      twitter: "https://twitter.com/kele_megano",
+      instagram: "https://www.instagram.com/kele_megano",
+      facebook: "https://www.facebook.com/Kele Megano"
+    },
+     backgroundColor: "linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(43,187,145,1) 100%)",
+  },  {
+    name: "Si Jones",
+    slug: "si-jones",
+    image: "/images/talent/sijones.png",
+    description: "Born in Mthatha Eastern Cape, South Africa; Si Jones’s career began in 2012 at Rhodes University. Her undeniable passion for entertainment along with her eclectic and vibrant personality led her into joining Rhodes Music Radio (RMR), where she learnt the skills of being a DJ and an On-Air radio presenter. Si Jones's music has been featured and playlisted on various commercial radio stations such as Metro FM, Ligwalagwala FM, 947, Radio 2000, Ukhozi FM, Tru FM, YFM, Cliff Central, Massive Metro to name a few. She has MC'd and DJ'd across South Africa, and sharing stages with the likes of Black Motion, Heavy K, Oskido, Shimza, DJ Zinhle and many more other “heavyweights” in the industry. During her 3-year period at RMR, Si Jones has presented 3 radioshows and has been the content producer for 2 of those shows",
+    socials: {
+      twitter: "https://twitter.com/kele_megano",
+      instagram: "https://www.instagram.com/kele_megano",
+      facebook: "https://www.facebook.com/Kele Megano"
+    },
+     backgroundColor: "linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(43,187,145,1) 100%)",
+  },  {
+    name: "Jack",
+    slug: "jack",
+    image: "/images/talent/jack.png",
+    description: "Being in love with music his whole life, Jack Devero joined the entertainment scene back in 2004 when he became part of the Vow FM team at Wits University. He later founded Pink Diamond Productions and Lexhosanostra and started Deejaying at these events. He has since Deejayed and made scores of people across the country dance. Whether it is Hip Hop, R&B or Old Skool Kwaito and House, he will have your guests dancing. It is a passion of his and something he is good at. Let him curate a feel-good environment at your next event.",
+    socials: {
+      twitter: "https://twitter.com/kele_megano",
+      instagram: "https://www.instagram.com/kele_megano",
+      facebook: "https://www.facebook.com/Kele Megano"
+    },
+     backgroundColor: "linear-gradient(90deg, rgba(32,164,107,1) 0%, rgba(9,121,61,1) 35%)",
   },
   {
     name: "Ntosh",
@@ -23,42 +67,10 @@ const artists = [
     },
      backgroundColor: "linear-gradient(90deg, rgba(0,71,53,1) 0%, rgba(5,50,53,1) 35%)",
   },
-  {
-    name: "Kele",
-    slug: "kele",
-    image: "/images/talent/kele.png",
-    description: "A qualified chef by profession, a DJ out of passion, and an influencer by people’s choice. Kele is not just skilled in the kitchen but on the decks, cooking and serving flavour not only on dinner tables but the dance floor as well. This 24-year-old bubbly and full of life personality credits her great ear and love for music to her parents. Making her a versatile DJ.",
-    socials: {
-      twitter: "https://twitter.com/kele_megano",
-      instagram: "https://www.instagram.com/kele_megano",
-      facebook: "https://www.facebook.com/Kele Megano"
-    },
-    backgroundColor:"linear-gradient(90deg, rgba(210,71,53,1) 0%, rgba(145,20,3,1) 35%)",
-  },
-  {
-    name: "Jack",
-    slug: "jack",
-    image: "/images/talent/jack.png",
-    description: "Being in love with music his whole life, Jack Devero joined the entertainment scene back in 2004 when he became part of the Vow FM team at Wits University. He later founded Pink Diamond Productions and Lexhosanostra and started Deejaying at these events. He has since Deejayed and made scores of people across the country dance. Whether it is Hip Hop, R&B or Old Skool Kwaito and House, he will have your guests dancing. It is a passion of his and something he is good at. Let him curate a feel-good environment at your next event.",
-    socials: {
-      twitter: "https://twitter.com/kele_megano",
-      instagram: "https://www.instagram.com/kele_megano",
-      facebook: "https://www.facebook.com/Kele Megano"
-    },
-     backgroundColor: "linear-gradient(90deg, rgba(32,164,107,1) 0%, rgba(9,121,61,1) 35%)",
-  },
-  {
-    name: "Si Jones",
-    slug: "si-jones",
-    image: "/images/talent/sijones.png",
-    description: "Born in Mthatha Eastern Cape, South Africa; Si Jones’s career began in 2012 at Rhodes University. Her undeniable passion for entertainment along with her eclectic and vibrant personality led her into joining Rhodes Music Radio (RMR), where she learnt the skills of being a DJ and an On-Air radio presenter. Si Jones's music has been featured and playlisted on various commercial radio stations such as Metro FM, Ligwalagwala FM, 947, Radio 2000, Ukhozi FM, Tru FM, YFM, Cliff Central, Massive Metro to name a few. She has MC'd and DJ'd across South Africa, and sharing stages with the likes of Black Motion, Heavy K, Oskido, Shimza, DJ Zinhle and many more other “heavyweights” in the industry. During her 3-year period at RMR, Si Jones has presented 3 radioshows and has been the content producer for 2 of those shows",
-    socials: {
-      twitter: "https://twitter.com/kele_megano",
-      instagram: "https://www.instagram.com/kele_megano",
-      facebook: "https://www.facebook.com/Kele Megano"
-    },
-     backgroundColor: "linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(43,187,145,1) 100%)",
-  },
+
+
+
+
   // {
   //   name: "Benjahmin The Faff",
   //   slug: "benjamin",

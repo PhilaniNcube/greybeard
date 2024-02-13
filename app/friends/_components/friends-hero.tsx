@@ -19,8 +19,8 @@ const friends = [
     image: "/images/friends/heavy.png",
   },
   {
-    name: "The Black Wendy",
-    image: "/images/wendy.webp",
+    name: "Just06",
+    image: "/images/friends/just-6.png",
   },
   {
     name: "Henny Be Lit",
