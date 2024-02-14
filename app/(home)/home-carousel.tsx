@@ -21,62 +21,63 @@ import { motion } from "framer-motion";
 
 
 const artists = [
-  {
-    name: "Sliqe",
-    slug: "sliqe",
-    image: "/images/slique.png",
-    backgroundColor: "bg-gradient-to-r from-yellow-600 to-yellow-700",
-  },
-  {
-    name: "Ntosh",
-    slug: "ntosh",
-    image: "/images/ntosh.png",
-    backgroundColor: "bg-gradient-to-r from-green-300 to-green-700",
-  },
-  {
-    name: "Kele",
-    slug: "kele",
-    image: "/images/kele.png",
-    backgroundColor: "bg-gradient-to-r from-teal-300 to-indigo-500",
-  },
-  {
-    name: "Si Jones",
-    slug: "si-jones",
-    image: "/images/sijones.png",
-    backgroundColor: "bg-gradient-to-r from-blue-600 to-blue-700",
-  },
-  // {
-  //   name: "Uncle Bae",
-  //   image: "/images/bae.png",
-  //   backgroundColor: "bg-gradient-to-r from-green-600 to-green-700",
-  // },
-  // {
-  //   name: "Just 6",
-  //   image: "/images/just6.webp",
-  //   backgroundColor: "bg-gradient-to-r from-slate-200 to-slate-400",
-  // },
-  // {
-  //   name: "Benjahmin",
-  //   slug: "benjamin",
-  //   image: "/images/benjamin.png",
-  //   backgroundColor: "bg-gradient-to-r from-teal-600 to-teal-700",
-  // },
-  // {
-  //   name: "Heavy K",
-  //   image: "/images/heavyk.png",
-  //   backgroundColor: "bg-gradient-to-r from-orange-400 to-orange-700",
-  // },
-  // {
-  //   name: "Noks",
-  //   image: "/images/noks.webp",
-  //   backgroundColor: "bg-gradient-to-r from-teal-800 to-teal-950",
-  // },
-  {
-    name: "Jack Devero",
-    slug: "jack",
-    image: "/images/jack.png",
-    backgroundColor: "bg-gradient-to-r from-zinc-500 to-zinc-700",
-  },
+	{
+		name: "Black Wendy",
+		image: "/images/wendy.png",
+		backgroundColor: "bg-gradient-to-r from-teal-800 to-teal-950",
+	},
+	{
+		name: "Sliqe",
+		slug: "sliqe",
+		image: "/images/slique.png",
+		backgroundColor: "bg-gradient-to-r from-yellow-600 to-yellow-700",
+	},
+	{
+		name: "Ntosh",
+		slug: "ntosh",
+		image: "/images/ntosh.png",
+		backgroundColor: "bg-gradient-to-r from-green-300 to-green-700",
+	},
+	{
+		name: "Kele",
+		slug: "kele",
+		image: "/images/kele.png",
+		backgroundColor: "bg-gradient-to-r from-teal-300 to-indigo-500",
+	},
+	{
+		name: "Si Jones",
+		slug: "si-jones",
+		image: "/images/sijones.png",
+		backgroundColor: "bg-gradient-to-r from-blue-600 to-blue-700",
+	},
+	// {
+	//   name: "Uncle Bae",
+	//   image: "/images/bae.png",
+	//   backgroundColor: "bg-gradient-to-r from-green-600 to-green-700",
+	// },
+	// {
+	//   name: "Just 6",
+	//   image: "/images/just6.webp",
+	//   backgroundColor: "bg-gradient-to-r from-slate-200 to-slate-400",
+	// },
+	{
+		name: "Benjahmin",
+		slug: "benjamin",
+		image: "/images/benjamin.png",
+		backgroundColor: "bg-gradient-to-r from-teal-600 to-teal-700",
+	},
+	// {
+	//   name: "Heavy K",
+	//   image: "/images/heavyk.png",
+	//   backgroundColor: "bg-gradient-to-r from-orange-400 to-orange-700",
+	// },
+
+	{
+		name: "Jack   ",
+		slug: "jack",
+		image: "/images/jack.png",
+		backgroundColor: "bg-gradient-to-r from-zinc-500 to-zinc-700",
+	},
 ];
 
 

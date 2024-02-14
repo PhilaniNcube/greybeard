@@ -25,11 +25,11 @@ const artists = [  {
     name: "Black Wendy",
     slug: "blac-wendy",
     image: "/images/talent/wendy.png",
-    description: "Born in Mthatha Eastern Cape, South Africa; Si Jones’s career began in 2012 at Rhodes University. Her undeniable passion for entertainment along with her eclectic and vibrant personality led her into joining Rhodes Music Radio (RMR), where she learnt the skills of being a DJ and an On-Air radio presenter. Si Jones's music has been featured and playlisted on various commercial radio stations such as Metro FM, Ligwalagwala FM, 947, Radio 2000, Ukhozi FM, Tru FM, YFM, Cliff Central, Massive Metro to name a few. She has MC'd and DJ'd across South Africa, and sharing stages with the likes of Black Motion, Heavy K, Oskido, Shimza, DJ Zinhle and many more other “heavyweights” in the industry. During her 3-year period at RMR, Si Jones has presented 3 radioshows and has been the content producer for 2 of those shows",
+    description: "A screenwriter and actress by profession, Wendy has worked on award-winning local blockbuster shows like Isibaya and Scandal. She is currently a screenwriter for 3 original Netflix shows and has also served as the voice of the popular music channel TRACE. On the social media front, Wendy has had the privilege of collaborating on campaigns with some of the most reputable brands in the country; Standard Bank, Clarins, Takealot and Engen to highlight a few.",
     socials: {
-      twitter: "https://twitter.com/kele_megano",
-      instagram: "https://www.instagram.com/kele_megano",
-      facebook: "https://www.facebook.com/Kele Megano"
+      twitter: "https://twitter.com/",
+      instagram: "https://www.instagram.com/",
+      facebook: "https://www.facebook.com"
     },
      backgroundColor: "linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(43,187,145,1) 100%)",
   },  {

@@ -28,7 +28,7 @@ const Artists = () => {
 							Our curated roster of diverse talent ensures a perfect match for
 							every brand looking to tell a unique story. Join us in creating a
 							world where talent and brand synergy redefine the future of
-							entertainement.
+							entertainment.
 						</p>
 					</div>
 
