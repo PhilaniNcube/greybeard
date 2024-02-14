@@ -37,7 +37,7 @@ const ClientsGrid = () => {
       <div className="min-h-screen backdrop-blur-lg relative flex items-center bg-slate-400/30">
         <div className="h-full container grid grid-cols-1 lg:grid-cols-2 lg:py-36 gap-8 lg:gap-16">
           {clients.map((client, index) => (
-            <div key={index} className="w-full text-white pr-8 md:pr-12 lg:pr-24">
+            <div key={client.name} className="w-full text-white pr-8 md:pr-12 lg:pr-24">
               <h4 className="font-bold text-lg">{client.name}</h4>
               {client?.event && <i className="text-md">{client.event}</i>}
               <p className="text-md my-2">{client.description}</p>
