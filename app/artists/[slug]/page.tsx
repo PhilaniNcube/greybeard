@@ -12,7 +12,7 @@ const ArtistPage = ({params:{slug}}:{params:{slug:string}}) => {
   return (
     <main
       style={{
-        backgroundImage: `${artist?.backgroundColor!}`,
+        backgroundImage: `${artist?.backgroundColor || "linear-gradient(180deg, #000000 0%, #000000 100%)"}`,
       }}
       className="flex items-center min-h-screen"
     >
@@ -22,10 +22,10 @@ const ArtistPage = ({params:{slug}}:{params:{slug:string}}) => {
         )}
       >
         <Image
-          src={artist?.image!}
+          src={artist?.image || ""}
           width={600}
           height={600}
-          alt={artist?.name!}
+          alt={artist?.name || ""}
         />
         <div className="flex flex-col justify-center">
           <h1

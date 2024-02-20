@@ -23,6 +23,7 @@ import { motion } from "framer-motion";
 const artists = [
 	{
 		name: "Black Wendy",
+    slug: "wendy",
 		image: "/images/wendy.png",
 		backgroundColor: "bg-gradient-to-r from-teal-800 to-teal-950",
 	},

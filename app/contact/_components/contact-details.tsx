@@ -2,6 +2,7 @@ import { agrandir } from "@/app/fonts";
 import { cn } from "@/lib/utils";
 import { Facebook, Instagram, Mail, MailIcon, MapIcon, PhoneIcon, PinIcon, SmartphoneIcon, Twitter } from "lucide-react";
 import Link from "next/link";
+import ContactForm from "./contact-form";
 
 const ContactDetails = () => {
   return (
@@ -11,7 +12,7 @@ const ContactDetails = () => {
           <p className="mb-10 text-2xl tracking-wider">Say Hello...</p>
           <Link
             href="mailto:info@greybeardpro.co.za"
-            className="flex items-center mb-10 text-md tracking-wider gap-x-3"
+            className="flex items-center mb-10 tracking-wider text-md gap-x-3"
             prefetch={false}
           >
             <Mail className="w-6 h-6" />
@@ -19,7 +20,7 @@ const ContactDetails = () => {
           </Link>
           <Link
             href="tel:+27714167448"
-            className="flex items-center mb-10 text-md tracking-wider gap-x-3"
+            className="flex items-center mb-10 tracking-wider text-md gap-x-3"
             prefetch={false}
           >
             <PhoneIcon className="w-6 h-6" />
@@ -27,15 +28,15 @@ const ContactDetails = () => {
           </Link>
           <Link
             href="https://wa.me/27714167448"
-            className="flex items-center mb-10 text-md tracking-wider gap-x-3"
+            className="flex items-center mb-10 tracking-wider text-md gap-x-3"
             prefetch={false}
           >
             <SmartphoneIcon className="w-6 h-6" />
             Whatsapp
           </Link>
-          <div className="flex items-start mb-10 text-md tracking-wider gap-x-3">
+          <div className="flex items-start mb-10 tracking-wider text-md gap-x-3">
             <MapIcon className="w-6 h-6" />
-            <p className=" mb-10 text-md tracking-wider">
+            <p className="mb-10 tracking-wider text-md">
               4 Antrim Road <br />
               Bryanston <br />
               Johannesburg <br />
@@ -55,7 +56,7 @@ const ContactDetails = () => {
             </Link>
           </div>
         </div>
-        <div className="flex flex-col items-center justify-center flex-1 px-5 py-20 bg-gray-900 lg:h-screen lg:py-36">
+        <div className="flex flex-col items-center justify-center flex-1 px-5 py-20 bg-gray-900 lg:py-36">
           <h1
             className={cn(
               "text-white font-extrabold text-5xl lg:text-[9rem] uppercase",
@@ -73,6 +74,7 @@ const ContactDetails = () => {
           >
             In Touch
           </h2>
+          <ContactForm />
         </div>
       </div>
     </section>

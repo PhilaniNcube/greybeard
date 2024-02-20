@@ -23,7 +23,7 @@ const artists = [  {
     backgroundColor: "linear-gradient(90deg, rgba(100,71,53,1) 0%, rgba(115,50,53,1) 35%)",
   },  {
     name: "Black Wendy",
-    slug: "blac-wendy",
+    slug: "wendy",
     image: "/images/talent/wendy.png",
     description: "A screenwriter and actress by profession, Wendy has worked on award-winning local blockbuster shows like Isibaya and Scandal. She is currently a screenwriter for 3 original Netflix shows and has also served as the voice of the popular music channel TRACE. On the social media front, Wendy has had the privilege of collaborating on campaigns with some of the most reputable brands in the country; Standard Bank, Clarins, Takealot and Engen to highlight a few.",
     socials: {
