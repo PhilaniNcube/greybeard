@@ -14,7 +14,7 @@ const clients = [
 			"ViB mobile provides a platform for our talent to submit their music to make use of the caller RingBack Tone (RBT) revenue in Sub Saharan Africa. The likes of DJ Sliqe have taken up this opportunity and has his catalogue distributed for RBT tunes by ViB Mobile.",
 	},
 	{
-		name: "PEERMONT HOTESLS, CASINOS & RESORTS",
+		name: "PEERMONT HOTELS, CASINOS & RESORTS",
 		description:
 			"We provide talent, entertainment and event support to some of Peermont’s resorts and restaurants. Si Jones, a versatile AfroHouse DJ has a weekend residency at Reign, Emperor’s Palace that sets an ambiance for their patrons while dining.",
 	},
@@ -32,15 +32,15 @@ const ClientsGrid = () => {
         width={1920}
         height={1080}
         alt="Background"
-        className="absolute inset-0 h-screen lg:aspect-video w-full object-cover"
+        className="absolute inset-0 object-cover w-full h-screen lg:aspect-video"
       />
-      <div className="min-h-screen backdrop-blur-lg relative flex items-center bg-slate-400/30">
-        <div className="h-full container grid grid-cols-1 lg:grid-cols-2 lg:py-36 gap-8 lg:gap-16">
+      <div className="relative flex items-center min-h-screen backdrop-blur-lg bg-slate-400/30">
+        <div className="container grid h-full grid-cols-1 gap-8 lg:grid-cols-2 lg:py-36 lg:gap-16">
           {clients.map((client, index) => (
-            <div key={client.name} className="w-full text-white pr-8 md:pr-12 lg:pr-24">
-              <h4 className="font-bold text-lg">{client.name}</h4>
+            <div key={client.name} className="w-full pr-8 text-white md:pr-12 lg:pr-24">
+              <h4 className="text-lg font-bold">{client.name}</h4>
               {client?.event && <i className="text-md">{client.event}</i>}
-              <p className="text-md my-2">{client.description}</p>
+              <p className="my-2 text-md">{client.description}</p>
             </div>
           ))}
         </div>

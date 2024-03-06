@@ -12,7 +12,7 @@ const services =[
     image: "images/party.webp",
   },
   {
-    name: "German Sedans &  V Classes",
+    name: "German Sedans &  V Class Buses",
     image: "images/cars.webp",
   },
 

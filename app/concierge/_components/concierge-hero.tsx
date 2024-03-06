@@ -24,7 +24,7 @@ const ConciergeHero = () => {
           <p className="mt-4 text-center text-white text-md lg:text-lg text-balance">
             Want to attend the coolest events anywhere in the country in style?
             We got you covered. From luxury accommodation, getting you there
-            chauffeur driven in a german machines and making sure you have the
+            chauffeur driven in german machines and making sure you have the
             best seats at the gig.
           </p>
         </div>

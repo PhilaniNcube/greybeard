@@ -7,7 +7,7 @@ import { agrandir } from "@/app/fonts";
 
 const friends = [
   {
-    name: "Stino Le Thewnny",
+    name: "Stino Le Thwenny",
     image: "/images/friends/stino.png",
   },
   {
@@ -19,7 +19,7 @@ const friends = [
     image: "/images/friends/heavy.png",
   },
   {
-    name: "Just06",
+    name: "Just 6",
     image: "/images/friends/just-6.png",
   },
   {

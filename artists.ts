@@ -22,7 +22,7 @@ const artists = [  {
     },
     backgroundColor: "linear-gradient(90deg, rgba(100,71,53,1) 0%, rgba(115,50,53,1) 35%)",
   },  {
-    name: "Black Wendy",
+    name: "The Black Wendy",
     slug: "wendy",
     image: "/images/talent/wendy.png",
     description: "A screenwriter and actress by profession, Wendy has worked on award-winning local blockbuster shows like Isibaya and Scandal. She is currently a screenwriter for 3 original Netflix shows and has also served as the voice of the popular music channel TRACE. On the social media front, Wendy has had the privilege of collaborating on campaigns with some of the most reputable brands in the country; Standard Bank, Clarins, Takealot and Engen to highlight a few.",
@@ -42,9 +42,9 @@ const artists = [  {
       instagram: "https://www.instagram.com/kele_megano",
       facebook: "https://www.facebook.com/Kele Megano"
     },
-     backgroundColor: "linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(43,187,145,1) 100%)",
+     backgroundColor: "linear-gradient(0deg, rgba(90,34,139,1) 0%, rgba(140, 20, 252,1) 100%)",
   },  {
-    name: "Jack",
+    name: "Jack Devero",
     slug: "jack",
     image: "/images/talent/jack.png",
     description: "Being in love with music his whole life, Jack Devero joined the entertainment scene back in 2004 when he became part of the Vow FM team at Wits University. He later founded Pink Diamond Productions and Lexhosanostra and started Deejaying at these events. He has since Deejayed and made scores of people across the country dance. Whether it is Hip Hop, R&B or Old Skool Kwaito and House, he will have your guests dancing. It is a passion of his and something he is good at. Let him curate a feel-good environment at your next event.",
@@ -56,7 +56,7 @@ const artists = [  {
      backgroundColor: "linear-gradient(90deg, rgba(32,164,107,1) 0%, rgba(9,121,61,1) 35%)",
   },
   {
-    name: "Ntosh",
+    name: "Ntosh Madlingozi",
     slug: "ntosh",
     image: "/images/talent/ntosh.png",
     description: "Ntosh Madlingozi is a comedian and actor with an 18-year career across stand-up comedy, television, radio, cinema and corporate MC work. From a memorable open mic stand up debut at what was 88 Club in Norwood, in 2004, he has carved out a sustainable career based on versatility and an obsessive interest in the human condition. Over the years he has featured, to great acclaim, in theatre shows such as Blacks Only, Heavyweight Comedy Jam, 99% Xhosa Comedy Festival, Cape Town International Comedy Festival, the DSTV Comedy Festival and in turn sharing stages with the likes of Chris Forrest, John Vlismas, Trevor Noah, Tom Stade (Canada), Dwayne Perkins (U.S.A), Loyiso Gola and Kagiso Lediga among others.",
