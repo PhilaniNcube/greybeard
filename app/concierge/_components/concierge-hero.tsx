@@ -6,9 +6,9 @@ const ConciergeHero = () => {
   return (
     <section className="relative">
       <Image
-        src="/images/pool.webp"
-        width={1980}
-        height={1053}
+        src="/images/concierge.webp"
+        width={900}
+        height={1350}
         alt="Hero Image"
         className="w-full aspect-[3/2] lg:aspect-[5/2] object-cover"
       />
@@ -19,7 +19,7 @@ const ConciergeHero = () => {
               "text-4xl font-bold text-center text-white lg:text-6xl uppercase"
             , agrandir.className)}
           >
-            Greybeard Concierge
+            Entertainment Concierge
           </h1>
           <p className="mt-4 text-center text-white text-md lg:text-lg text-balance">
             Want to attend the coolest events anywhere in the country in style?

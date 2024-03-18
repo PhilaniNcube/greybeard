@@ -4,15 +4,15 @@ import Link from "next/link";
 /* eslint-disable @next/next/no-img-element */
 const services =[
   {
-    name: "Luxury Apartments and Villas",
+    name: "Luxury apartments and villas",
     image: "images/apartment.webp",
   },
   {
-    name: "VIP lounges at big events & trendy clubs",
-    image: "images/party.webp",
+    name: "VIP lounges at big events and trendy clubs",
+    image: "images/lounge.webp",
   },
   {
-    name: "German Sedans & V Class Buses",
+    name: "German Sedans and V Class Buses",
     image: "images/cars.webp",
   },
 
@@ -27,7 +27,7 @@ const ConciergeServices = () => {
           We have access to:
         </h2>
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 md:gap-16">
-          {services.map((service, index) => (
+          {services.map((service) => (
             <div className="flex flex-col justify-between w-full group" key={service.name}>
               <h3 className="mb-3 text-lg font-semibold text-center text-balance line-clamp-2">
                 {service.name}
