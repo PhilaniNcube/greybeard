@@ -13,7 +13,7 @@ const services =[
   },
   {
     name: "German Sedans and V Class Buses",
-    image: "images/cars.webp",
+    image: "images/vlass.jpeg",
   },
 
 
