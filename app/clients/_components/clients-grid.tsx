@@ -11,12 +11,12 @@ const clients = [
 	{
 		name: "VIB Mobile",
 		description:
-			"ViB mobile provides a platform for our talent to submit their music to make use of the caller RingBack Tone (RBT) revenue in Sub Saharan Africa. The likes of DJ Sliqe have taken up this opportunity and has his catalogue distributed for RBT tunes by ViB Mobile.",
+			"ViB mobile provides a platform for our talent to submit their music to make use of the Caller RingBack Tone (CRBT) revenue in Sub Saharan Africa. The likes of DJ Sliqe have taken up this opportunity and has his catalogue distributed for CRBT tunes by ViB Mobile.",
 	},
 	{
 		name: "PEERMONT HOTELS, CASINOS & RESORTS",
 		description:
-			"We provide talent, entertainment and event support to some of Peermont’s resorts and restaurants. Si Jones, a versatile AfroHouse DJ has a weekend residency at Reign, Emperor’s Palace that sets an ambiance for their patrons while dining.",
+			"We are a trusted supplier for talent, entertainment, and event support to the Peermont’s group of resorts and restaurants in South Africa and Botswana. We book some of the most trendiest celebrities as well as local talent to perform at the various outlets within Peermont’s Resorts on a weekly, monthly and annual basis. Reign at Emperor’s Palace is one of the flagship outlets where we set an ambiance for their patrons while dining and socializing with their loved ones.",
 	},
 	{
 		name: "KWA AFRIKA",
