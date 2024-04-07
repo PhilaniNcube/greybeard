@@ -26,6 +26,7 @@ const ArtistPage = ({params:{slug}}:{params:{slug:string}}) => {
           width={600}
           height={600}
           alt={artist?.name || ""}
+          className="w-[60vh] mx-auto object-cover"
         />
         <div className="flex flex-col justify-center">
           <h1

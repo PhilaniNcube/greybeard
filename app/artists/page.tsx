@@ -14,8 +14,8 @@ const Artists = () => {
 
   return (
 			<main className="py-16 lg:py-32">
-				<div className="container">
-					<div className="text-white">
+				<div className="">
+					<div className="container text-white">
 						<h1
 							className={cn(
 								"mb-4 text-2xl md:text-4xl lg:text-5xl font-bold text-center",
@@ -54,7 +54,7 @@ const Artists = () => {
 						))}
 					</div>
 
-					<div className="relative md:flex min-h-[500px] mt-8 max-w-[95%] hidden mx-auto">
+					<div className="relative md:flex min-h-[500px] mt-8 max-w-[90%] container hidden mx-auto">
 						{artists.map((artist, index) => (
 							<Link
 								href={`/artists/${artist.slug}`}
@@ -73,7 +73,7 @@ const Artists = () => {
 									animate={{ opacity: 1 }}
 									transition={{ duration: index % 2 === 0 ? 1.1 : 5 }}
 									className={cn(
-										"object-contain w-full scale-[130%] h-[330px]  group-hover:scale-[150%] transition-transform duration-300 z-50",
+										"object-contain w-full scale-[120%] h-[320px] group-hover:scale-[150%] transition-transform duration-300 z-50",
 										`z-[${index}] group-hover:z-[999]`,
 									)}
 									src={artist.image}
