@@ -23,15 +23,9 @@ import { motion } from "framer-motion";
 const artists = [
 	{
 		name: "Black Wendy",
-    slug: "wendy",
+		slug: "wendy",
 		image: "/images/wendy.png",
 		backgroundColor: "bg-gradient-to-r from-teal-800 to-teal-950",
-	},
-	{
-		name: "Sliqe",
-		slug: "sliqe",
-		image: "/images/slique.png",
-		backgroundColor: "bg-gradient-to-r from-yellow-600 to-yellow-700",
 	},
 	{
 		name: "Ntosh",
@@ -39,6 +33,19 @@ const artists = [
 		image: "/images/ntosh.png",
 		backgroundColor: "bg-gradient-to-r from-green-300 to-green-700",
 	},
+	{
+		name: "Vafa",
+		slug: "vafa",
+		image: "/images/talent/vafa.png",
+		backgroundColor: "bg-gradient-to-r from-slate-300 to-slate-100",
+	},
+	{
+		name: "Sliqe",
+		slug: "sliqe",
+		image: "/images/slique.png",
+		backgroundColor: "bg-gradient-to-r from-yellow-600 to-yellow-700",
+	},
+
 	{
 		name: "Kele",
 		slug: "kele",
@@ -50,6 +57,12 @@ const artists = [
 		slug: "si-jones",
 		image: "/images/sijones.png",
 		backgroundColor: "bg-gradient-to-r from-blue-600 to-blue-700",
+	},
+	{
+		name: "Jack   ",
+		slug: "jack",
+		image: "/images/jack.png",
+		backgroundColor: "bg-gradient-to-r from-zinc-500 to-zinc-700",
 	},
 	// {
 	//   name: "Uncle Bae",
@@ -72,19 +85,6 @@ const artists = [
 	//   image: "/images/heavyk.png",
 	//   backgroundColor: "bg-gradient-to-r from-orange-400 to-orange-700",
 	// },
-
-	{
-		name: "Jack   ",
-		slug: "jack",
-		image: "/images/jack.png",
-		backgroundColor: "bg-gradient-to-r from-zinc-500 to-zinc-700",
-	},
-	{
-		name: "Vafa",
-		slug: "vafa",
-		image: "/images/talent/vafa.png",
-		backgroundColor: "bg-gradient-to-r from-slate-300 to-slate-100",
-	},
 ];
 
 

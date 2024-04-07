@@ -17,6 +17,7 @@ import { Separator } from "./ui/separator";
 
 const links = [
   { title: "About Us", href: "/about"},
+  { title: "Talent", href: "/artists"},
   { title: "Friends Of Grey", href: "/friends"},
   { title: "Clients", href: "/clients"},
   { title: "Concierge", href: "/concierge"},
@@ -41,7 +42,7 @@ const MobileNavbar = () => {
               <Separator className="my-2" />
               <div className="flex flex-col w-full mt-5 gap-y-5">
                 {links.map((link, index) => (
-                  <Link key={index} href={link.href} className={cn("text-lg md:text-2xl text-white font-medium", oswald.className)}>
+                  <Link key={link.href} href={link.href} className={cn("text-lg md:text-2xl text-white font-medium", oswald.className)}>
                     {link.title}
                   </Link>
                 ))}
