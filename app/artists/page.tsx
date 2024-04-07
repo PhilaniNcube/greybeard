@@ -54,7 +54,7 @@ const Artists = () => {
 						))}
 					</div>
 
-					<div className="relative md:flex min-h-[500px] mt-8 max-w-[85%] hidden mx-auto">
+					<div className="relative md:flex min-h-[500px] mt-8 max-w-[95%] hidden mx-auto">
 						{artists.map((artist, index) => (
 							<Link
 								href={`/artists/${artist.slug}`}

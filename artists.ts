@@ -25,7 +25,7 @@ const artists = [  {
     name: "The Black Wendy",
     slug: "wendy",
     image: "/images/talent/wendy.png",
-    description: "A screenwriter and actress by profession, Wendy has worked on award-winning local blockbuster shows like Isibaya and Scandal. She is currently a screenwriter for 3 original Netflix shows and has also served as the voice of the popular music channel TRACE. On the social media front, Wendy has had the privilege of collaborating on campaigns with some of the most reputable brands in the country; Standard Bank, Clarins, Takealot and Engen to highlight a few.",
+    description: "The face and voice of Dark & Lovely 2024, Wendy Gumede is a screenwriter and actress by profession. Known as 'The Black Wendy' to many; she has worked on award-winning local blockbuster shows like Isibaya and Scandal. She is currently a screenwriter for Netflix original shows and has also served as the voice of the popular music channel TRACE. On the social media front, Wendy has had the privilege of collaborating on campaigns with some of the most reputable brands in the country; Standard Bank, Clarins, Takealot and Engen to highlight a few.",
     socials: {
       twitter: "https://twitter.com/",
       instagram: "https://www.instagram.com/",
@@ -67,7 +67,18 @@ const artists = [  {
     },
      backgroundColor: "linear-gradient(90deg, rgba(0,71,53,1) 0%, rgba(5,50,53,1) 35%)",
   },
-
+{
+  name: "Vafa",
+  slug: 'vafa',
+  image: '/images/vafa.png',
+  description: "Vafa started his comedy journey a little over 5 years ago. His brand of clean comedy is peppered with undertones that resonate across the country and continent, making him relatable to people from many walks of life. Apart from performing stand-up comedy, Vafa directs and acts in relatable sketch comedy videos amassing millions of impressions and views across TikTok, Instagram and YouTube, where he has accumulated a large social media following. Vafa is also a talented Corporate MC, with vast experience hosting gala dinners, conferences and year-end functions. He prides himself in being able to increase participant and attendee engagement. Vafa’s adaptability and wit allow him to think on his feet to ensure that events run smoothly and successfully.",
+  socials: {
+    twitter: "https://twitter.com",
+    instagram: "https://www.instagram.com/vafaafrica",
+    facebook: "https://www.facebook.com/Vafa_Naraghi"
+  },
+       backgroundColor: "linear-gradient(90deg, rgba(0,44,100,1) 0%, rgba(8,50,110,1) 35%)",
+}
 
 
 

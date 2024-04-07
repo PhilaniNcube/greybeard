@@ -79,6 +79,12 @@ const artists = [
 		image: "/images/jack.png",
 		backgroundColor: "bg-gradient-to-r from-zinc-500 to-zinc-700",
 	},
+	{
+		name: "Vafa",
+		slug: "vafa",
+		image: "/images/talent/vafa.png",
+		backgroundColor: "bg-gradient-to-r from-slate-300 to-slate-100",
+	},
 ];
 
 

@@ -27,8 +27,8 @@ const friends = [
     image: "/images/friends/henny.png",
   },
   {
-    name: "Fort Noks",
-    image: "/images/friends/noks.png",
+    name: "Mjazz",
+    image: "/images/friends/mjazz.png",
   }
 ]
 
