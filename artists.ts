@@ -13,7 +13,8 @@ const artists = [  {
   {
     name: "Sliqe",
     slug: "sliqe",
-    image: "/images/talent/sliqe.png",
+    // image: "/images/talent/sliqe.png",
+    image: "/images/talent/sliqe.webp",
     description: "Award winning DJ and producer, Sliqe has proved to be one of the most important personnel of the current crop in the Hip Hop genre. Since his breakthrough single Do Like I Do which earned him a South African Music Award (SAMA), Sliqe has a track record that has made him one of the most sought-after DJs in the country, spear-heading the Hip Hop genre with a fresh breath that appeals to all. Sliqe has diffused himself across the South African entertainment scene.",
     socials: {
       twitter: "https://twitter.com/Sliqe",
@@ -25,7 +26,7 @@ const artists = [  {
     name: "The Black Wendy",
     slug: "wendy",
     // image: "/images/wendy_2.webp",
-    image: "/images/talent/wendy.webp",
+    image: "/images/talent/wendy.png",
     description: "The face and voice of Dark & Lovely’s Relaxed Hair Maintenance Range, Wendy Gumede is a screenwriter and actress by profession. Known as “The Black Wendy” to many; she has worked on award-winning local blockbuster shows like Isibaya and Scandal. She is currently a screenwriter for Netflix original shows and has also served as the voice of the popular music channel TRACE. On the social media front, Wendy has had the privilege of collaborating on campaigns with some of the most reputable brands in the country; Standard Bank, Clarins, Takealot and Comedy Central to highlight a few.",
     socials: {
       twitter: "https://twitter.com/",
@@ -72,7 +73,8 @@ const artists = [  {
 {
   name: "Vafa",
   slug: 'vafa',
-  image: '/images/vafa.png',
+  // image: '/images/vafa.png',
+  image: '/images/talent/vafa.webp',
   description: "Meet award winnning Vafa, the comedic maestro who's been rocking stages for over 5 years! His clean comedy isn't just sidesplitting, it's relatability that resonates from coast to coast and beyond. When he's not doing his thing with stand-up, Vafa's crafting sketch comedy that's taking the internet by storm. With millions of views across TikTok, Instagram, and YouTube, he's not just a comedian, he's a viral sensation! Vafa isn't just a stage star—he's your go-to guy for hosting your next big event. From gala dinners to corporate conferences, he's the master of ceremonies who's guaranteed to ramp up the fun. With his quick wit and adaptability, he'll have your audience doubled over with laughter while ensuring your event goes off without a hitch.",
   socials: {
     twitter: "https://twitter.com",

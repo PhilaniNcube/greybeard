@@ -53,36 +53,35 @@ const Artists = () => {
 							</Link>
 						))}
 					</div>
-
-					<div className="relative md:flex min-h-[500px] w-[95%] mt-8 translate-x-10 container hidden mx-auto">
-						{artists.map((artist, index) => (
-							<Link
-								href={`/artists/${artist.slug}`}
-								key={artist.name}
-								className={cn(
-									"absolute flex flex-col items-center justify-end py-10 group ",
-									index % 2 === 0 || index === 5
-										? "group-hover:z-[999]"
-										: "",
-
-								)}
-								style={{
-									left: `${index * (100 / artists.length - 1)}%`,
-								}}
-							>
-								<motion.img
-									initial={{ opacity: 0 }}
-									animate={{ opacity: 1 }}
-									transition={{ duration: index % 2 === 0 ? 1.1 : 5 }}
+					<div className="w-full overflow-hidden flex items-center justify-start p-6 ">
+						<div className="relative md:flex min-h-[500px] justify-start items-center  mt-8 container hidden ">
+							{artists.map((artist, index) => (
+								<Link
+									href={`/artists/${artist.slug}`}
+									key={artist.name}
 									className={cn(
-										"object-contain w-full scale-[115%] h-[320px] group-hover:scale-[150%] transition-transform duration-300 z-50",
-										`z-[${index}] group-hover:z-[999]`,
+										"absolute py-10 hover:z-[999] ",
+										index % 2 === 0 ? "hover:z-[999] z-0" : "z-10 ",
+                    index === 5 || index === 2 ? "z-0" : "z-10",
 									)}
-									src={artist.image}
-									alt={artist.name}
-								/>
-							</Link>
-						))}
+									style={{
+										left: `${index * (100 / artists.length - 1) + 4}%`,
+									}}
+								>
+									<motion.img
+										initial={{ opacity: 0 }}
+										animate={{ opacity: 1 }}
+										transition={{ duration: index % 2 === 0 ? 1.1 : 5 }}
+										className={cn(
+											"object-cover w-full h-[320px] hover:scale-[135%] transition-transform duration-300",
+											"hover:z-[999]",
+										)}
+										src={artist.image}
+										alt={artist.name}
+									/>
+								</Link>
+							))}
+						</div>
 					</div>
 				</div>
 			</main>
