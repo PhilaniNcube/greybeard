@@ -25,7 +25,7 @@ const artists = [  {
     name: "The Black Wendy",
     slug: "wendy",
     // image: "/images/wendy_2.webp",
-    image: "/images/talent/wendy.png",
+    image: "/images/talent/wendy.webp",
     description: "The face and voice of Dark & Lovely’s Relaxed Hair Maintenance Range, Wendy Gumede is a screenwriter and actress by profession. Known as “The Black Wendy” to many; she has worked on award-winning local blockbuster shows like Isibaya and Scandal. She is currently a screenwriter for Netflix original shows and has also served as the voice of the popular music channel TRACE. On the social media front, Wendy has had the privilege of collaborating on campaigns with some of the most reputable brands in the country; Standard Bank, Clarins, Takealot and Comedy Central to highlight a few.",
     socials: {
       twitter: "https://twitter.com/",
