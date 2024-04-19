@@ -54,18 +54,20 @@ const Artists = () => {
 						))}
 					</div>
 
-					<div className="relative md:flex min-h-[500px] mt-8 max-w-[90%] container hidden mx-auto">
+					<div className="relative md:flex min-h-[500px] mt-8 translate-x-10 container hidden mx-auto">
 						{artists.map((artist, index) => (
 							<Link
 								href={`/artists/${artist.slug}`}
 								key={artist.name}
 								className={cn(
 									"absolute flex flex-col items-center justify-end py-10 group ",
-									"group-hover:z-[999]",
+									index % 2 === 0 || index === 5
+										? "group-hover:z-[999]"
+										: "",
+
 								)}
 								style={{
 									left: `${index * (100 / artists.length - 1)}%`,
-									zIndex: `${index % 2 === 0 ? 1 : 2}`,
 								}}
 							>
 								<motion.img
@@ -73,7 +75,7 @@ const Artists = () => {
 									animate={{ opacity: 1 }}
 									transition={{ duration: index % 2 === 0 ? 1.1 : 5 }}
 									className={cn(
-										"object-contain w-full scale-[120%] h-[320px] group-hover:scale-[150%] transition-transform duration-300 z-50",
+										"object-contain w-full scale-[105%] h-[320px] group-hover:scale-[150%] transition-transform duration-300 z-50",
 										`z-[${index}] group-hover:z-[999]`,
 									)}
 									src={artist.image}

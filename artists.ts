@@ -24,6 +24,7 @@ const artists = [  {
   },  {
     name: "The Black Wendy",
     slug: "wendy",
+    // image: "/images/wendy_2.webp",
     image: "/images/talent/wendy.png",
     description: "The face and voice of Dark & Lovely’s Relaxed Hair Maintenance Range, Wendy Gumede is a screenwriter and actress by profession. Known as “The Black Wendy” to many; she has worked on award-winning local blockbuster shows like Isibaya and Scandal. She is currently a screenwriter for Netflix original shows and has also served as the voice of the popular music channel TRACE. On the social media front, Wendy has had the privilege of collaborating on campaigns with some of the most reputable brands in the country; Standard Bank, Clarins, Takealot and Comedy Central to highlight a few.",
     socials: {
@@ -31,12 +32,13 @@ const artists = [  {
       instagram: "https://www.instagram.com/",
       facebook: "https://www.facebook.com"
     },
-     backgroundColor: "linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(43,187,145,1) 100%)",
+     backgroundColor: "linear-gradient(0deg, rgba(90,34,139,1) 0%, rgba(140, 20, 252,1) 100%)",
   },  {
     name: "Si Jones",
     slug: "si-jones",
     image: "/images/talent/sijones.png",
-    description: "Si Jones is a DJ, Voice Artist and Broadcaster, specialising in Dance and House music. She’s been featured and playlisted on various commercial radio stations such as, Metro FM, Ligwalagwala FM, Radio 2000, Ukhozi FM, Tru FM, 94.7, YFM, Cliff Central, Massive Metro and many more. Si has also made it to international radio stations such as Drums Radio. Her versatility in the house music genre has allowed her the ability to perform and headline on various stages across SA alongside the greatest in SA history. With over a decade representing house music as a DJ and broadcaster, Si Jones has founded a dance music platform, charity campaigns and a podcast. Find out more on her past and present on her website www.sijones.co.za",
+    description: "Si Jones is a DJ, Voice Artist and Broadcaster, specialising in Dance and House music. She’s been featured and playlisted on various commercial radio stations such as, Metro FM, Ligwalagwala FM, Radio 2000, Ukhozi FM, Tru FM, 94.7, YFM, Cliff Central, Massive Metro and many more. Si has also made it to international radio stations such as Drums Radio. Her versatility in the house music genre has allowed her the ability to perform and headline on various stages across SA alongside the greatest in SA history. With over a decade representing house music as a DJ and broadcaster, Si Jones has founded a dance music platform, charity campaigns and a podcast. Find out more on her past and present on her website ",
+    website: "https://www.sijones.co.za",
     socials: {
       twitter: "https://twitter.com/",
       instagram: "https://www.instagram.com/",
