@@ -49,7 +49,8 @@ const artists = [  {
   },  {
     name: "Jack Devero",
     slug: "jack",
-    image: "/images/talent/jack.png",
+    // image: "/images/talent/jack.png",
+    image: "/images/talent/jack_2.webp",
     description: "Being in love with music his whole life, Jack Devero joined the entertainment scene back in 2004 when he became part of the Vow FM team at Wits University. He later founded Pink Diamond Productions and Lexhosanostra and started Deejaying at these events. He has since Deejayed and made scores of people across the country dance. Whether it is Hip Hop, R&B or Old Skool Kwaito and House, he will have your guests dancing. It is a passion of his and something he is good at. Let him curate a feel-good environment at your next event.",
     socials: {
       twitter: "https://twitter.com/",

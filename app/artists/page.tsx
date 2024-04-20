@@ -53,8 +53,8 @@ const Artists = () => {
 							</Link>
 						))}
 					</div>
-					<div className="w-full overflow-hidden flex items-center justify-start p-6 ">
-						<div className="relative md:flex min-h-[500px] justify-start items-center  mt-8 container hidden ">
+					<div className="flex items-start justify-start -translate-y-[40px] w-full px-6 max-w-[85%] mx-auto overflow-hidden">
+						<div className="relative md:flex min-h-[500px] justify-start items-center container hidden">
 							{artists.map((artist, index) => (
 								<Link
 									href={`/artists/${artist.slug}`}
@@ -63,7 +63,9 @@ const Artists = () => {
 										"absolute py-10 hover:z-[999] ",
 										index % 2 === 0 ? "hover:z-[999] z-0" : "z-10 ",
                     index === 5 || index === 2 ? "z-0" : "z-10",
+
 									)}
+
 									style={{
 										left: `${index * (100 / artists.length - 1) + 4}%`,
 									}}
