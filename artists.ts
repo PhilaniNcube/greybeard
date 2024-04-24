@@ -1,7 +1,7 @@
 const artists = [  {
     name: "Kele",
     slug: "kele",
-    image: "/images/talent/kele.png",
+    image: "/images/talent/kele.webp",
     description: "A qualified chef by profession, a DJ out of passion, and an influencer by people’s choice. Kele is not just skilled in the kitchen but on the decks, cooking and serving flavour not only on dinner tables but the dance floor as well. This 24-year-old bubbly and full of life personality credits her great ear and love for music to her parents. Making her a versatile DJ.",
     socials: {
       twitter: "https://twitter.com/kele_megano",
@@ -62,7 +62,7 @@ const artists = [  {
   {
     name: "Ntosh Madlingozi",
     slug: "ntosh",
-    image: "/images/talent/ntosh.png",
+    image: "/images/talent/ntosh.webp",
     description: "Ntosh Madlingozi is a comedian and actor with an 19-year career across standup comedy, television, radio, cinema and corporate MC work. From a memorable open mic stand up debut at what was 88 Club in Norwood, in 2004, he has carved out a sustainable career based on versatility and an obsessive interest in the human condition. Over the years Ntosh has featured, to great acclaim, in theatre shows. From Blacks Only, Heavyweight Comedy Jam, 99% Xhosa Comedy Festival, Cape Town International Comedy Festival, to the DSTV Comedy Festival. Sharing stages with the likes of Chris Forrest, John Vlismas, Trevor Noah, Tom Stade (Canada), Dwayne Perkins (U.S.A), Loyiso Gola and Kagiso Lediga among others.",
     socials: {
       twitter: "https://twitter.com/ntosh_madlingozi",

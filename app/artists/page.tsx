@@ -6,6 +6,7 @@ import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { agrandir } from "../fonts";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const Artists = () => {
 
@@ -13,12 +14,12 @@ const Artists = () => {
 
 
   return (
-			<main className="py-16 lg:py-32">
+			<main className="pt-16 lg:pt-32">
 				<div className="">
-					<div className="container text-white">
+					<div className="container text-white ">
 						<h1
 							className={cn(
-								"mb-4 text-2xl md:text-4xl lg:text-5xl font-bold text-center",
+								"mb-4 text-2xl md:text-4xl  lg:text-5xl font-bold text-center",
 								agrandir.className,
 							)}
 						>
@@ -53,35 +54,46 @@ const Artists = () => {
 							</Link>
 						))}
 					</div>
-					<div className="flex items-start justify-start -translate-y-[40px] w-full px-6 max-w-[85%] mx-auto overflow-hidden">
-						<div className="relative md:flex min-h-[500px] justify-start items-center container hidden">
+					<div className="h-[430px] hidden md:block">
+						<div className="relative  mx-auto -translate-x-[55px] max-w-[99%] h-full ">
 							{artists.map((artist, index) => (
-								<Link
-									href={`/artists/${artist.slug}`}
+								<motion.div
 									key={artist.name}
-									className={cn(
-										"absolute py-10 hover:z-[999] ",
-										index % 2 === 0 ? "hover:z-[999] z-0" : "z-10 ",
-                    index === 5 || index === 2 ? "z-0" : "z-10",
-
-									)}
-
+									initial={{ opacity: 0 }}
+									animate={{ opacity: 1 }}
+									transition={{ duration: index % 2 === 0 ? 1.1 : 5 }}
 									style={{
+										width: `${100 / artists.length - 1}%`,
 										left: `${index * (100 / artists.length - 1) + 4}%`,
+										zIndex: index === 5 || index === 2 ? 0 : 10,
+
 									}}
 								>
-									<motion.img
-										initial={{ opacity: 0 }}
-										animate={{ opacity: 1 }}
-										transition={{ duration: index % 2 === 0 ? 1.1 : 5 }}
+									<Link
+										href={`/artists/${artist.slug}`}
 										className={cn(
-											"object-cover w-full h-[320px] hover:scale-[135%] transition-transform duration-300",
-											"hover:z-[999]",
+											"absolute -bottom-[10px]",
+											index % 2 === 0 ? "z-0" : "z-10 ",
+											index === 5 || index === 2 ? "z-0" : "z-10",
+											index === artists.length - 1 ? "w-[]" : "z-10",
 										)}
-										src={artist.image}
-										alt={artist.name}
-									/>
-								</Link>
+										style={{
+											left: `${index * (100 / artists.length - 1) + 4}%`,
+											zIndex: index === 5 || index === 2 ? 0 : 10,
+										}}
+									>
+										<Image
+											className={cn(
+												"object-cover w-full h-[370px] grayscale-[60%] hover:grayscale-0 transition-transform duration-300",
+												index === 4 ? "-translate-x-6" : "",
+											)}
+											width={576}
+											height={788}
+											src={artist.image}
+											alt={artist.name}
+										/>
+									</Link>
+								</motion.div>
 							))}
 						</div>
 					</div>
