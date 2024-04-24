@@ -14,26 +14,31 @@ import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { oswald } from "@/app/fonts";
 import { Separator } from "./ui/separator";
+import { useState } from "react";
 
 const links = [
   { title: "About Us", href: "/about"},
+  { title: "Clients", href: "/clients"},
   { title: "Talent", href: "/artists"},
   { title: "Friends Of Grey", href: "/friends"},
-  { title: "Clients", href: "/clients"},
+  { title: "Events", href: "/events"},
   { title: "Concierge", href: "/concierge"},
   { title: "Get In Touch", href: "/contact"},
 ]
 
 const MobileNavbar = () => {
+
+const [isOpen, setIsOpen] = useState(false)
+
   return <nav className="lg:hidden fixed top-0 left-0 right-0 z-[500]">
     <div className="container flex items-center justify-between py-4">
       <Image src="/images/white-logo.png" width={1323} height={542} alt="Logo" className="object-cover w-36"  />
 
-      <Sheet >
+      <Sheet open={isOpen} onOpenChange={setIsOpen}>
           <SheetTrigger>
             <MenuIcon className="w-8 h-8 text-white" />
           </SheetTrigger>
-          <SheetContent >
+          <SheetContent onClick={() => setIsOpen(false)}>
               <SheetHeader>
                 <SheetTitle className="w-full">
                  {/* <Image src="/images/black_logo.png" width={1323} height={542} alt="Logo" className="object-cover w-1/2"  /> */}

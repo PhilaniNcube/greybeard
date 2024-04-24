@@ -1,6 +1,6 @@
 import ContactDetails from "./_components/contact-details";
 
 const page = () => {
-  return <div><ContactDetails /></div>;
+  return <main><ContactDetails /></main>;
 };
 export default page;

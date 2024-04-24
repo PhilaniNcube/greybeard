@@ -4,6 +4,7 @@ import {motion} from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { agrandir } from "@/app/fonts";
+import Link from "next/link";
 
 const friends = [
   {
@@ -60,12 +61,12 @@ const FirendsHero = () => {
                     className="object-cover object-center w-full h-full"
                   />
                   <div className="absolute inset-0 flex items-center justify-center transition-all bg-black bg-opacity-50 opacity-0 group-hover:opacity-100">
-                    <Button
+                    <Link href="/contact"
                       type="button"
-                      className="text-white bg-transparent border-4 border-white rounded-full"
+                      className="px-2 py-1 text-white bg-transparent border-4 border-white rounded-full"
                     >
-                      Book Bow
-                    </Button>
+                      Book Now
+                    </Link>
                   </div>
                 </div>
                 <h2 className="text-2xl font-bold text-center text-white uppercase">

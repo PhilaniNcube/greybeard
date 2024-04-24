@@ -33,7 +33,7 @@ const Artists = () => {
 						</p>
 					</div>
 
-					<div className="grid grid-cols-1 sm:grid-cols-2 md:hidden">
+					<div className="container grid grid-cols-1 sm:grid-cols-2 md:hidden">
 						{artists.map((artist, index) => (
 							<Link
 								href={`/artists/${artist.slug}`}
@@ -42,15 +42,17 @@ const Artists = () => {
 									"flex flex-col items-center justify-center mb-10 py-10 group",
 								)}
 							>
-								<img
+								<Image
 									className={cn(
-										"object-cover w-full group-hover:scale-110 transition-transform duration-300 z-50",
+										"object-cover w-full transition-transform duration-300 z-50",
 										`z-[${index}]`,
 									)}
+                  width={578}
+                  height={788}
 									src={artist.image}
 									alt={artist.name}
 								/>
-								<p className="text-2xl text-center text-white">{artist.name}</p>
+								<p className="text-2xl text-center text-white sr-only">{artist.name}</p>
 							</Link>
 						))}
 					</div>
