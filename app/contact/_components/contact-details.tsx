@@ -45,16 +45,21 @@ const ContactDetails = () => {
 						</div>
 
 						<div className="flex items-center gap-x-3">
-							<Link href="https://www.facebook.com">
+							<Link
+								href="https://www.facebook.com/greybeardpro?mibextid=LQQJ4d"
+								target="_blank"
+							>
 								<Facebook className="w-12 h-12" />
 							</Link>
-							<Link href="https://www.instagram.com">
+							<Link
+								href="https://www.instagram.com/greybeardpro?igsh=ZXU0ZXhsbGd6Y3lj"
+								target="_blank"
+							>
 								<Instagram className="w-12 h-12" />
 							</Link>
-							<Link href="https://www.twitter.com">
-
+							<Link href="https://x.com/greybeardpro?s=21&t=afPEKhqCeZDCcv33o4S7Vw" target="_blank">
 								<svg
-                  xlinkTitle="Twitter"
+									xlinkTitle="Twitter"
 									className="w-12 h-12"
 									fill="none"
 									height="2500"
@@ -62,7 +67,7 @@ const ContactDetails = () => {
 									xmlns="http://www.w3.org/2000/svg"
 									viewBox="0 0 512 512"
 								>
-                  <title>Twitter</title>
+									<title>Twitter</title>
 									<path d="M0 0h512v512H0z" fill="#000" />
 									<path
 										clip-rule="evenodd"

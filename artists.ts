@@ -45,7 +45,7 @@ const artists = [  {
       instagram: "https://www.instagram.com/",
       facebook: "https://www.facebook.com/"
     },
-     backgroundColor: "linear-gradient(0deg, rgba(90,34,139,1) 0%, rgba(140, 20, 252,1) 100%)",
+     backgroundColor: "linear-gradient(0deg, rgba(40,34,89,1) 0%, rgba(40, 100, 200,1) 100%)",
   },  {
     name: "Jack Devero",
     slug: "jack",
