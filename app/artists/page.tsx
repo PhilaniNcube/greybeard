@@ -78,6 +78,8 @@ const Artists = () => {
 											index % 2 === 0 ? "z-0" : "z-10 ",
 											index === 5 || index === 2 ? "z-0" : "z-10",
 											index === artists.length - 1 ? "w-[]" : "z-10",
+                      index === 5 ? "-translate-x-6" : "",
+                      index === 6 ? "-translate-x-1" : "",
 										)}
 										style={{
 											left: `${index * (100 / artists.length - 1) + 4}%`,

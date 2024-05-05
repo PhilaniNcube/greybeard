@@ -1,6 +1,21 @@
 import { cn } from "@/lib/utils";
 import { agrandir } from "../fonts";
 import { ScrollArea } from "@/components/ui/scroll-area";
+import { title } from "process";
+import Image from "next/image";
+
+const events = [
+  {
+    image: "/images/events/her_sundays.webp",
+    title: "Her Sundays",
+    number: "01",
+  },
+  {
+    image: "/images/events/impolo.webp",
+    title: "Impolo Yabahlobo",
+    number: "02",
+  },
+]
 
 const page = () => {
   return (
@@ -36,7 +51,12 @@ const page = () => {
 								</span>
 							</h1>
 							<div className="grid gap-4 mt-8 lg:grid-cols-2">
-								<div className="w-full">
+                {
+                  events.map((event) => (
+	              <div className="relative w-full group" key={event.number}>
+                  <div className="inset-0 items-center justify-center hidden group-hover:z-[999] group-hover:flex group-hover:absolute">
+                  <Image src={event.image} alt={event.title} className="w-[280px] group-hover:block group-hover:absolute aspect-square" width={500} height={500} />
+                  </div>
 									<div className="relative min-h-[300px] flex items-center justify-center">
 										<h3
 											className={cn(
@@ -44,18 +64,21 @@ const page = () => {
 												agrandir.className,
 											)}
 										>
-											01
+											{event.number}
 										</h3>
 										<div className="absolute inset-0 ">
 											<div className="flex flex-col items-center justify-center h-full text-center text-white">
 												<h4 className="text-2xl font-bold uppercase lg:text-4xl">
-													Metro FM Heatwave
+													{event.title}
 												</h4>
 											</div>
 										</div>
 									</div>
 								</div>
-								<div className="w-full"/>
+                  ))
+                }
+
+
 							</div>
 						</div>
 					</ScrollArea>

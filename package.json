@@ -23,6 +23,8 @@
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",
     "cmdk": "^0.2.0",
+    "embla-carousel": "^8.0.4",
+    "embla-carousel-auto-scroll": "^8.0.4",
     "embla-carousel-autoplay": "8.0.0-rc19",
     "embla-carousel-react": "8.0.0-rc19",
     "framer-motion": "^10.16.4",
