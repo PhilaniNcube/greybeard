@@ -7,16 +7,25 @@ import Image from "next/image";
 
 const logos = [
 	{
+		src: "/images/logos/loreal.webp",
+		alt: "Loreal",
+	},
+	{
 		src: "/images/logos/dark_n_lovely.webp",
 		alt: "Dark and Lovely",
 	},
+
 	{
-		src: "/images/logos/diageo.webp",
-		alt: "Diageo",
+		src: "/images/logos/pmi-logo.webp",
+		alt: "Philip Morris",
 	},
 	{
-		src: "/images/logos/philip_morris.webp",
-		alt: "Philip Morris",
+		src: "/images/logos/iqos.webp",
+		alt: "IQOS",
+	},
+	{
+		src: "/images/logos/rgbc.webp",
+		alt: "RGBC",
 	},
 	{
 		src: "/images/logos/hendricks.webp",
@@ -26,17 +35,10 @@ const logos = [
 		src: "/images/logos/hennessy.webp",
 		alt: "Hennessy",
 	},
+
 	{
-		src: "/images/logos/iqos.webp",
-		alt: "IQOS",
-	},
-	{
-		src: "/images/logos/loreal.webp",
-		alt: "Loreal",
-	},
-	{
-		src: "/images/logos/rgbc.webp",
-		alt: "RGBC",
+		src: "/images/logos/diageo.webp",
+		alt: "Diageo",
 	},
 	{
 		src: "/images/logos/tanq.webp",
@@ -53,8 +55,8 @@ const ClientLogos = () => {
 
 
 	return (
-		<div className="bg-white">
-			<div className="container py-12 ">
+		<div className="bg-transparent">
+			<div className="container py-2 ">
 				<Carousel
 					plugins={[
             AutoScroll({
@@ -68,7 +70,7 @@ const ClientLogos = () => {
 				>
 					<CarouselContent className="">
 						{logos.map((item, index) => (
-							<CarouselItem key={item.src} className="w-[200px] basis-1/4 flex items-center">
+							<CarouselItem key={item.src} className="flex items-center basis-1/4 lg:basis-1/6">
 								<Image
 									className="object-cover"
 									src={item.src}

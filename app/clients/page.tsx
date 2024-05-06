@@ -6,7 +6,7 @@ const page = () => {
   return <main>
     <ClientsHero />
     <ClientsGrid />
-    <ClientLogos />
+    {/* <ClientLogos /> */}
   </main>;
 };
 export default page;
