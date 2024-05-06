@@ -35,7 +35,7 @@ const ClientsGrid = () => {
         alt="Background"
         className="absolute inset-0 object-cover w-full h-screen lg:aspect-video"
       />
-      <div className="relative flex flex-col items-center min-h-screen py-12 backdrop-blur-lg bg-slate-400/30">
+      <div className="relative flex flex-col items-center min-h-screen py-12 lg:py-2 backdrop-blur-lg bg-slate-400/30">
         <div className="container grid h-full grid-cols-1 gap-8 lg:grid-cols-2 lg:py-36 lg:gap-16">
           {clients.map((client, index) => (
             <div key={client.name} className="w-full pr-8 text-white md:pr-12 lg:pr-24">
