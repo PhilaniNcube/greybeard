@@ -10,6 +10,7 @@ import Image from "next/image";
 
 const Artists = () => {
 
+  const numArtists = artists.length
 
 
 
@@ -47,12 +48,14 @@ const Artists = () => {
 										"object-cover w-full transition-transform duration-300 z-50",
 										`z-[${index}]`,
 									)}
-                  width={578}
-                  height={788}
+									width={578}
+									height={788}
 									src={artist.image}
 									alt={artist.name}
 								/>
-								<p className="text-2xl text-center text-white sr-only">{artist.name}</p>
+								<p className="text-2xl text-center text-white sr-only">
+									{artist.name}
+								</p>
 							</Link>
 						))}
 					</div>
@@ -65,25 +68,24 @@ const Artists = () => {
 									animate={{ opacity: 1 }}
 									transition={{ duration: index % 2 === 0 ? 1.1 : 5 }}
 									style={{
-										width: `${100 / artists.length - 1}%`,
-										left: `${index * (100 / artists.length - 1) + 4}%`,
-										zIndex: index === 5 || index === 2 ? 0 : 10,
-
+										width: `${100 / (numArtists - 1)}%`,
+										left: `${100 / numArtists - 1 + 2}%`,
+										// zIndex: index === 5 || index === 2 ? 0 : 10,
 									}}
 								>
 									<Link
 										href={`/artists/${artist.slug}`}
 										className={cn(
 											"absolute -bottom-[10px]",
-											index % 2 === 0 ? "z-0" : "z-10 ",
-											index === 5 || index === 2 ? "z-0" : "z-10",
-											index === artists.length - 1 ? "w-[]" : "z-10",
-                      index === 5 ? "-translate-x-6" : "",
-                      index === 6 ? "translate-x-6 " : "",
+											index === 5 ? "-translate-x-[25px] z-[3]" : "",
+                      index === 1 ? "translate-x-6" : "",
+                      index === 3 ? "-translate-x-6" : "",
+                      index === numArtists - 1 ? "z-[-10]" : "",
+                      index === numArtists - 2 ? "-translate-x-5" : ""
 										)}
 										style={{
-											left: `${index * (100 / artists.length - 1) + 4}%`,
-											zIndex: index === 5 || index === 2 ? 0 : 10,
+											left: `${index * (100 / numArtists - 1) + 4}%`,
+											// zIndex: index === 5 ? 25 : 0,
 										}}
 									>
 										<Image
@@ -91,9 +93,9 @@ const Artists = () => {
 												"object-cover w-full h-[370px] grayscale-[60%] hover:grayscale-0 transition-transform duration-300",
 												index === 4 ? "-translate-x-6" : "",
 											)}
-											width={576}
-											height={788}
-											src={artist.image}
+											width={600}
+											height={600}
+											src={artist.img}
 											alt={artist.name}
 										/>
 									</Link>

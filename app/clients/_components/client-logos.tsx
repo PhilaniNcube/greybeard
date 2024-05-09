@@ -11,7 +11,7 @@ const logos = [
 		alt: "Loreal",
 	},
 	{
-		src: "/images/logos/dark_n_lovely.webp",
+		src: "/images/logos/dark_and_lovely.webp",
 		alt: "Dark and Lovely",
 	},
 
@@ -55,7 +55,7 @@ const ClientLogos = () => {
 
 
 	return (
-		<div className="bg-transparent">
+		<div className="bg-white">
 			<div className="container py-2 ">
 				<Carousel
 					plugins={[
