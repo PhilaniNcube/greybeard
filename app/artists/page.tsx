@@ -70,7 +70,6 @@ const Artists = () => {
 									style={{
 										width: `${100 / (numArtists - 1)}%`,
 										left: `${100 / numArtists - 1 + 2}%`,
-										// zIndex: index === 5 || index === 2 ? 0 : 10,
 									}}
 								>
 									<Link

@@ -17,7 +17,7 @@ const ArtistPage = ({params:{slug}}:{params:{slug:string}}) => {
 						"linear-gradient(180deg, #000000 0%, #000000 100%)"
 					}`,
 				}}
-				className="flex items-center overflow-hidden"
+				className="flex items-center overflow-hidden lg:h-screen"
 			>
 				<div
 					className={cn(
@@ -26,10 +26,18 @@ const ArtistPage = ({params:{slug}}:{params:{slug:string}}) => {
 				>
 					<Image
 						src={artist?.image || ""}
-						width={579}
-						height={788}
+						width={500}
+						height={500}
 						alt={artist?.name || ""}
-						className={artist?.slug === 'si-jones' ? "w-[58vh] mx-auto object-cover" : "w-[63vh] mx-auto object-cover rounded-lg"}
+						className={cn(
+							"aspect-sqaure mx-auto object-cover w-[85vh]",
+							artist?.slug === "si-jones"
+								? "w-[80vh] md:w-[55vh] mx-auto object-cover"
+								: "",
+							artist?.slug === "jack" ? "w-[85vh]" : "",
+              artist?.slug === "ntosh" ? "w-[80vh]" : "",
+              artist?.slug === "benjamin" ? "w-[85vh]" : "",
+						)}
 					/>
 					<div className="flex flex-col justify-center h-full">
 						<h1
@@ -42,7 +50,9 @@ const ArtistPage = ({params:{slug}}:{params:{slug:string}}) => {
 						</h1>
 						<p className="mt-4 text-white text-md">
 							{artist?.description}{" "}
-							<a href={`${artist?.website}`}>{` ${artist?.website}`}</a>
+							{artist?.website ? (
+								<Link href={`${artist?.website}`}>{` ${artist?.website}`}</Link>
+							) : null}
 						</p>
 						<Link
 							href="/contact"

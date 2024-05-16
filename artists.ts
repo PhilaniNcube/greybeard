@@ -33,7 +33,7 @@ const artists = [
 		name: "The Black Wendy",
 		slug: "wendy",
 		img: "/images/talent/sq/black_wendy_sq.webp",
-		image: "/images/talent/wendy.png",
+		image: "/images/talent/sq/black_wendy_sq.webp",
 		description:
 			"The face and voice of Dark & Lovely’s Relaxed Hair Maintenance Range, Wendy Gumede is a screenwriter and actress by profession. Known as “The Black Wendy” to many; she has worked on award-winning local blockbuster shows like Isibaya and Scandal. She is currently a screenwriter for Netflix original shows and has also served as the voice of the popular music channel TRACE. On the social media front, Wendy has had the privilege of collaborating on campaigns with some of the most reputable brands in the country; Standard Bank, Clarins, Takealot and Comedy Central to highlight a few.",
 		socials: {
@@ -64,7 +64,7 @@ const artists = [
 		name: "Jack Devero",
 		slug: "jack",
 		img: "/images/talent/sq/jack_sq.webp",
-		image: "/images/talent/jack_2.webp",
+		image: "/images/talent/sq/jack_sq.webp",
 		description:
 			"Being in love with music his whole life, Jack Devero joined the entertainment scene back in 2004 when he became part of the Vow FM team at Wits University. He later founded Pink Diamond Productions and Lexhosanostra and started Deejaying at these events. He has since Deejayed and made scores of people across the country dance. Whether it is Hip Hop, R&B or Old Skool Kwaito and House, he will have your guests dancing. It is a passion of his and something he is good at. Let him curate a feel-good environment at your next event.",
 		socials: {
@@ -79,7 +79,7 @@ const artists = [
 		name: "Ntosh Madlingozi",
 		slug: "ntosh",
 		img: "/images/talent/sq/ntosh_sq.webp",
-		image: "/images/talent/ntosh.webp",
+		image: "/images/talent/sq/ntosh_sq.webp",
 		description:
 			"Ntosh Madlingozi is a comedian and actor with an 19-year career across standup comedy, television, radio, cinema and corporate MC work. From a memorable open mic stand up debut at what was 88 Club in Norwood, in 2004, he has carved out a sustainable career based on versatility and an obsessive interest in the human condition. Over the years Ntosh has featured, to great acclaim, in theatre shows. From Blacks Only, Heavyweight Comedy Jam, 99% Xhosa Comedy Festival, Cape Town International Comedy Festival, to the DSTV Comedy Festival. Sharing stages with the likes of Chris Forrest, John Vlismas, Trevor Noah, Tom Stade (Canada), Dwayne Perkins (U.S.A), Loyiso Gola and Kagiso Lediga among others.",
 		socials: {
