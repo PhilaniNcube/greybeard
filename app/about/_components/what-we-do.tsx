@@ -10,7 +10,7 @@ import { agrandir } from "@/app/fonts";
 
 const WhatWeDo = () => {
   return (
-    <section className="relative h-dvh" id="what-we-do">
+    <section className="relative min-h-dvh py-8" id="what-we-do">
       <Image
         src="/images/visor.webp"
         width={1920}
@@ -23,7 +23,7 @@ const WhatWeDo = () => {
         <div className="w-full col-span-2 lg:col-span-1">
           <h1
             className={cn(
-              "text-4xl lg:text-7xl text-white -translate-x-6 uppercase font-extrabold tracking-wider"
+              "text-4xl lg:text-7xl text-white lg:-translate-x-6 uppercase font-extrabold tracking-wider"
             , agrandir.className)}
           >
             What We Do

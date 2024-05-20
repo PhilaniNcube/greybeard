@@ -18,7 +18,7 @@ const CreativeCornerModal = () => {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <Button className="px-6 text-sm lg:text-lg text-white uppercase rounded-full bg-gradient-to-r from-black to-yellow-400">
+        <Button className="px-6 text-xs sm:text-sm lg:text-lg text-white uppercase rounded-full bg-gradient-to-r from-black to-yellow-400">
           Creative Corner
         </Button>
       </DialogTrigger>
