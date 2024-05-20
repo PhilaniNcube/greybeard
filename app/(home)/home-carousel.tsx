@@ -95,7 +95,7 @@ const HomeCarousel = () => {
   return (
 			<div className="relative overflow-hidden">
 				{" "}
-				<div className="container relative z-40 flex items-center justify-center h-screen gap-8 px-20 overflow-clip">
+				<div className="container relative z-40 flex items-center justify-center h-dvh gap-8 px-20 overflow-clip">
 					<Carousel
 						plugins={[
 							Autoplay({

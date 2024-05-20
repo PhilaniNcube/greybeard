@@ -24,12 +24,12 @@ const page = () => {
 				<video
 					muted
 					src="/videos/events.mp4"
-					className="object-cover w-full h-screen"
+					className="object-cover w-full h-dvh"
 					loop
 					autoPlay
 				/>
 				<div className="absolute inset-0 bg-slate-800/40">
-					<ScrollArea className="w-full h-screen">
+					<ScrollArea className="w-full h-dvh">
 						<div className="relative container  py-40 lg:py-[200px]">
 							<h1 className="flex flex-col items-end text-white">
 								<span

@@ -36,7 +36,7 @@ const friends = [
 const FirendsHero = () => {
   return (
     <section className="pt-20">
-      <div className="container min-h-screen">
+      <div className="container min-h-dvh">
         <div className="flex items-center justify-start h-full">
           <div className="hidden lg:block -translate-x-[110px]">
             <motion.h1

@@ -15,9 +15,9 @@ const AboutHero = () => {
         width={5920}
         height={3944}
         alt="Background"
-        className="absolute inset-0 object-cover object-right w-full h-screen aspect-video"
+        className="absolute inset-0 object-cover object-right w-full h-dvh aspect-video"
       />
-      <div className="container h-screen py-20 flex flex-col lg:translate-x-[250px] justify-center relative">
+      <div className="container h-dvh py-20 flex flex-col lg:translate-x-[250px] justify-center relative">
         <motion.h1
           initial={{ opacity: 0, x: -100 }}
           animate={{ opacity: 1, x: 0 }}

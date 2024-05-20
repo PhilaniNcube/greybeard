@@ -79,7 +79,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 
   return (
-    <section className="relative h-screen overflow-hidden">
+    <section className="relative h-dvh overflow-hidden">
       {loading && (
         <div
           ref={loaderRef}

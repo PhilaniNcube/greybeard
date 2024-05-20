@@ -10,7 +10,7 @@ import { agrandir } from "@/app/fonts";
 
 const WhatWeDo = () => {
   return (
-    <section className="relative h-screen" id="what-we-do">
+    <section className="relative h-dvh" id="what-we-do">
       <Image
         src="/images/visor.webp"
         width={1920}
@@ -18,7 +18,7 @@ const WhatWeDo = () => {
         alt="Background"
         className="absolute inset-0 w-full object-cover object-top hidden lg:block"
       />
-      <div className="container h-screen py-20 grid grid-cols-2 gap-8 relative">
+      <div className="container h-dvh py-20 grid grid-cols-2 gap-8 relative">
         <div className="w-full hidden lg:block" />
         <div className="w-full col-span-2 lg:col-span-1">
           <h1

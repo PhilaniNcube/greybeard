@@ -17,7 +17,7 @@ const ArtistPage = ({params:{slug}}:{params:{slug:string}}) => {
 						"linear-gradient(180deg, #000000 0%, #000000 100%)"
 					}`,
 				}}
-				className="flex items-center overflow-hidden lg:h-screen"
+				className="flex items-center overflow-hidden lg:h-dvh"
 			>
 				<div
 					className={cn(

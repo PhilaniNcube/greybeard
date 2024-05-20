@@ -10,9 +10,9 @@ const ClientsHero = () => {
         width={1920}
         height={1080}
         alt="Background"
-        className="absolute inset-0 w-full h-screen aspect-video object-cover"
+        className="absolute inset-0 w-full h-dvh aspect-video object-cover"
       />
-      <div className="h-screen bg-gradient-to-b from-transparent to-slate-700/80 relative">
+      <div className="h-dvh bg-gradient-to-b from-transparent to-slate-700/80 relative">
         <div className="flex container flex-col justify-center lg:justify-end h-full">
           <h1
             className={cn(
