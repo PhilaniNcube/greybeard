@@ -12,6 +12,8 @@ const Artists = () => {
 
   const numArtists = artists.length
 
+  console.log(`${100 / (numArtists - 1)}%`)
+
 
 
   return (
@@ -59,28 +61,29 @@ const Artists = () => {
 							</Link>
 						))}
 					</div>
-					<div className="h-[430px] hidden md:block">
+					<div className="md:h-[475px] hidden md:block overflow-hidden">
 						<div className="relative  mx-auto -translate-x-[55px] max-w-[99%] h-full ">
 							{artists.map((artist, index) => (
 								<motion.div
+                  className=""
 									key={artist.name}
 									initial={{ opacity: 0 }}
 									animate={{ opacity: 1 }}
 									transition={{ duration: index % 2 === 0 ? 1.1 : 5 }}
 									style={{
-										width: `${100 / (numArtists - 1)}%`,
-										left: `${100 / numArtists - 1 + 2}%`,
+										width: `${100 / (numArtists)}%`,
+										// left: `${100 / numArtists}%`,
 									}}
 								>
 									<Link
 										href={`/artists/${artist.slug}`}
 										className={cn(
-											"absolute -bottom-[10px]",
+											"absolute bottom-0 hover:scale-110 hover:z-[9999] duration-300",
 											index === 5 ? "-translate-x-[25px] z-[3]" : "",
-                      index === 1 ? "translate-x-6" : "",
-                      index === 3 ? "-translate-x-6" : "",
-                      index === numArtists - 1 ? "z-[-10]" : "",
-                      index === numArtists - 2 ? "-translate-x-5" : ""
+											index === 1 ? "translate-x-6" : "",
+											index === 3 ? "-translate-x-6" : "",
+											index === numArtists - 1 ? "z-[-10]" : "",
+											index === numArtists - 2 ? "-translate-x-5" : "",
 										)}
 										style={{
 											left: `${index * (100 / numArtists - 1) + 4}%`,
@@ -89,7 +92,7 @@ const Artists = () => {
 									>
 										<Image
 											className={cn(
-												"object-cover w-full h-[370px] grayscale-[60%] hover:grayscale-0 transition-transform duration-300",
+												"object-cover w-[370px] h-[370px] ] hover:grayscale-0 transition-transform duration-300",
 												index === 4 ? "-translate-x-6" : "",
 											)}
 											width={600}

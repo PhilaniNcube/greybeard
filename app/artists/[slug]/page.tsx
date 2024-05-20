@@ -51,7 +51,7 @@ const ArtistPage = ({params:{slug}}:{params:{slug:string}}) => {
 						<p className="mt-4 text-white text-md">
 							{artist?.description}{" "}
 							{artist?.website ? (
-								<Link href={`${artist?.website}`}>{` ${artist?.website}`}</Link>
+								<Link href={`${artist?.website}`}>{artist?.slug === "si-jones" ? "sijones.co.za" : `${artist.website}`}</Link>
 							) : null}
 						</p>
 						<Link
