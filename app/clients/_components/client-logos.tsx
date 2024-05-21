@@ -44,6 +44,10 @@ const logos = [
 		src: "/images/logos/tanq.webp",
 		alt: "Tanqueray",
 	},
+	{
+		src: "/images/logos/netflix.png",
+		alt: "Nteflix",
+	},
 ];
 
 const ClientLogos = () => {
