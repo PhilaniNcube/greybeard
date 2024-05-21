@@ -52,12 +52,6 @@ const logos = [
 
 const ClientLogos = () => {
 
-  const options = {loop:true}
-
-
-
-
-
 	return (
 		<div className="bg-white">
 			<div className="container py-2 ">
