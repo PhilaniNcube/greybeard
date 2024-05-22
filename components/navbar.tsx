@@ -49,13 +49,15 @@ const data = useMotionValueEvent(scrollY, "change", (latest) => {
 				)}
 			>
 				<div className="container flex items-center justify-between py-4">
-					<Image
-						src="/images/white-logo.png"
-						width={1323}
-						height={542}
-						alt="Logo"
-						className="object-cover w-36"
-					/>
+					<Link href="/">
+						<Image
+							src="/images/white-logo.png"
+							width={1323}
+							height={542}
+							alt="Logo"
+							className="object-cover w-36"
+						/>
+					</Link>
 
 					<Sheet open={isOpen} onOpenChange={setIsOpen}>
 						<SheetTrigger>
