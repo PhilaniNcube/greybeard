@@ -8,7 +8,7 @@ const ContactDetails = () => {
   return (
 			<section>
 				<div className="flex flex-col-reverse lg:flex-row ">
-					<div className="flex flex-col w-full py-20 pl-20 text-white lg:py-36 lg:pl-32 lg:w-1/3">
+					<div className="flex flex-col w-full pl-20 text-white py-28 lg:py-44 lg:pl-32 lg:w-1/3">
 						<p className="mb-10 text-2xl tracking-wider">Say Hello...</p>
 						<Link
 							href="mailto:info@greybeardpro.co.za"
@@ -79,10 +79,10 @@ const ContactDetails = () => {
 							</Link>
 						</div>
 					</div>
-					<div className="flex flex-col items-center justify-center flex-1 px-5 py-20 bg-gray-900 lg:py-36">
+					<div className="flex flex-col items-center justify-center flex-1 px-5 py-20 bg-gray-900 lg:py-44">
 						<h1
 							className={cn(
-								"text-white font-extrabold text-5xl lg:text-[9rem] uppercase",
+								"text-white font-extrabold text-5xl mt-12 lg:mt-8 lg:text-[9rem] uppercase",
 								agrandir.className,
 							)}
 						>
