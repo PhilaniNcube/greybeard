@@ -59,10 +59,16 @@ const artists = [
 		backgroundColor: "bg-gradient-to-r from-blue-600 to-blue-700",
 	},
 	{
-		name: "Jack   ",
+		name: "Jack",
 		slug: "jack",
 		image: "/images/jack.png",
 		backgroundColor: "bg-gradient-to-r from-zinc-500 to-zinc-700",
+	},
+	{
+		name: "BXB",
+		slug: "bxb",
+		image: "/images/bxb.png",
+		backgroundColor: "bg-gradient-to-r from-orange-500 to-yellow-700",
 	},
 	// {
 	//   name: "Uncle Bae",
@@ -95,7 +101,7 @@ const HomeCarousel = () => {
   return (
 			<div className="relative overflow-hidden">
 				{" "}
-				<div className="container relative z-40 flex items-center justify-center h-dvh gap-8 px-20 overflow-clip">
+				<div className="container relative z-40 flex items-center justify-center gap-8 px-20 h-dvh overflow-clip">
 					<Carousel
 						plugins={[
 							Autoplay({

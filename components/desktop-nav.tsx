@@ -36,7 +36,7 @@ export default function Desktop() {
 			<motion.div
 				className={cn(
 					"fixed top-0 left-0 right-0 z-[9999] hidden shadow-md lg:flex backdrop-blur-md duration-300 transition-colors",
-				    scrollYDepth > 50 ? "bg-black/50" : "",)}
+				    scrollYDepth > 50 ? "bg-black/90" : "",)}
 			>
 				<nav className="container px-6 py-4 mx-auto">
 					<div className="md:flex md:items-center md:justify-between">

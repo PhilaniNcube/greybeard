@@ -17,28 +17,27 @@ const ArtistPage = ({params:{slug}}:{params:{slug:string}}) => {
 						"linear-gradient(180deg, #000000 0%, #000000 100%)"
 					}`,
 				}}
-				className="flex min-h-dvh items-center overflow-hidden lg:h-dvh py-7"
+				className="flex items-center overflow-hidden min-h-dvh lg:h-dvh"
 			>
 				<div
 					className={cn(
-						"grid grid-cols-1  place-items-end gap-10 md:grid-cols-2 relative container",
+						"grid grid-cols-1  place-items-end gap-10 md:grid-cols-2 relative container h-full",
 					)}
 				>
-					<Image
-						src={artist?.image || ""}
-						width={500}
-						height={500}
-						alt={artist?.name || ""}
-						className={cn(
-							"aspect-sqaure mx-auto object-cover w-[50vw] lg:w-[85vh]",
-							artist?.slug === "si-jones"
-								? "w-[50vw] md:w-[55vh] mx-auto object-cover"
-								: "",
-							artist?.slug === "jack" ? "lg:w-[85vh]" : "",
-							artist?.slug === "ntosh" ? "lg:w-[80vh]" : "",
-							artist?.slug === "benjamin" ? "lg:w-[85vh]" : "",
-						)}
-					/>
+					<div className="flex items-end h-full">
+						<Image
+							src={artist?.image || ""}
+							width={600}
+							height={600}
+							alt={artist?.name || ""}
+							className={cn(
+								"mx-auto object-cover w-[50vw] lg:w-[75vh]",
+                artist?.slug === "vafa" ? "lg:scale-75 origin-bottom" : "",
+                artist?.slug === "sliqe" ? "lg:scale-90 origin-bottom" : "",
+                artist?.slug === "si-jones" ? "lg:scale-75 origin-bottom" : "",
+							)}
+						/>
+					</div>
 					<div className="flex flex-col justify-center h-full">
 						<h1
 							className={cn(
@@ -48,7 +47,7 @@ const ArtistPage = ({params:{slug}}:{params:{slug:string}}) => {
 						>
 							{artist?.name}
 						</h1>
-						<p className="mt-4 text-white text-sm lg:text-md">
+						<p className="mt-4 text-sm text-white lg:text-md">
 							{artist?.description}{" "}
 							{artist?.website ? (
 								<Link href={`${artist?.website}`}>

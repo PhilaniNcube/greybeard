@@ -45,7 +45,7 @@ const data = useMotionValueEvent(scrollY, "change", (latest) => {
 			<nav
 				className={cn(
 					"lg:hidden fixed top-0 left-0 right-0 z-[500] duration-300",
-					scrollYDepth > 50 ? "bg-black/80 shadow-sm" : "",
+					scrollYDepth > 50 ? "bg-black shadow-sm" : "",
 				)}
 			>
 				<div className="container flex items-center justify-between py-4">
