@@ -27,14 +27,15 @@ const ArtistPage = ({params:{slug}}:{params:{slug:string}}) => {
 					<div className="flex items-end h-full">
 						<Image
 							src={artist?.image || ""}
-							width={600}
-							height={600}
+							width={artist?.width || 600}
+							height={artist?.height || 600}
 							alt={artist?.name || ""}
 							className={cn(
-								"mx-auto object-cover w-[50vw] lg:w-[75vh]",
-                artist?.slug === "vafa" ? "lg:scale-75 origin-bottom" : "",
-                artist?.slug === "sliqe" ? "lg:scale-90 origin-bottom" : "",
-                artist?.slug === "si-jones" ? "lg:scale-75 origin-bottom" : "",
+								"mx-auto object-cover w-[45vw] lg:w-[40vw] origin-bottom",
+                artist?.slug === "jack" ? "lg:scale-90 " : "",
+                artist?.slug === "vafa" ? "lg:scale-[85%] " : "",
+                artist?.slug === "sliqe" ? "lg:scale-90 " : "",
+                artist?.slug === "bxb" ? "lg:scale-75 " : "",
 							)}
 						/>
 					</div>
