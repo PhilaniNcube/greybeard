@@ -33,19 +33,19 @@ const ClientsGrid = () => {
         width={1920}
         height={1080}
         alt="Background"
-        className="absolute inset-0 object-cover w-full h-dvh lg:aspect-video"
+        className="absolute inset-0 object-cover w-full h-full lg:object-cover md:h-dvh lg:aspect-video"
       />
-      <div className="relative flex flex-col items-center min-h-dvh py-12 lg:py-2 backdrop-blur-lg bg-slate-400/30">
-        <div className="container grid h-full grid-cols-1 gap-8 lg:grid-cols-2 lg:py-36 lg:gap-16">
+      <div className="relative flex flex-col items-center py-12 min-h-dvh lg:py-2 backdrop-blur-lg bg-slate-400/30">
+        <div className="container grid h-full grid-cols-1 gap-8 pb-8 lg:grid-cols-2 lg:py-36 lg:gap-16">
           {clients.map((client, index) => (
             <div key={client.name} className="w-full pr-8 text-white md:pr-12 lg:pr-24">
               <h4 className="text-lg font-bold">{client.name}</h4>
               {client?.event && <i className="text-md">{client.event}</i>}
-              <p className="my-2 text-md">{client.description}</p>
+              <p className="my-2 text-sm lg:text-md">{client.description}</p>
             </div>
           ))}
         </div>
-       <div className="absolute bottom-0 left-0 right-0">
+       <div className="absolute bottom-0 left-0 right-0 mt-8">
         <ClientLogos />
         </div>
       </div>
