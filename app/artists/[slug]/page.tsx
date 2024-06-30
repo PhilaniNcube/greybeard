@@ -17,29 +17,29 @@ const ArtistPage = ({params:{slug}}:{params:{slug:string}}) => {
 						"linear-gradient(180deg, #000000 0%, #000000 100%)"
 					}`,
 				}}
-				className="flex items-center overflow-hidden min-h-dvh lg:h-dvh"
+				className="flex items-center overflow-hidden min-h-dvh lg:h-dvh lg:max-h-screen"
 			>
 				<div
 					className={cn(
-						"grid grid-cols-1  place-items-end gap-10 md:grid-cols-2 relative container h-full",
+						"grid grid-cols-1 gap-10 md:grid-cols-2 relative container h-full",
 					)}
 				>
 					<div className="flex items-end h-full">
 						<Image
 							src={artist?.image || ""}
-							width={artist?.width || 600}
-							height={artist?.height || 600}
+							width={1000}
+							height={1300}
 							alt={artist?.name || ""}
 							className={cn(
 								"mx-auto object-cover w-[45vw] lg:w-[40vw] origin-bottom",
                 artist?.slug === "jack" ? "lg:scale-90 " : "",
                 artist?.slug === "vafa" ? "lg:scale-[85%] " : "",
-                artist?.slug === "sliqe" ? "lg:scale-90 " : "",
-                artist?.slug === "bxb" ? "lg:scale-75 " : "",
+                artist?.slug === "sliqe" ? "scale-95" : "",
+                artist?.slug === "bxb" ? "scale-90" : "",
 							)}
 						/>
 					</div>
-					<div className="flex flex-col justify-center h-full">
+					<div className="flex flex-col justify-center lg:h-[800px]">
 						<h1
 							className={cn(
 								"text-2xl lg:text-5xl font-bold uppercase text-white",

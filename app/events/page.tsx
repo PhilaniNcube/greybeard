@@ -1,18 +1,17 @@
 import { cn } from "@/lib/utils";
 import { agrandir } from "../fonts";
 import { ScrollArea } from "@/components/ui/scroll-area";
-import { title } from "process";
 import Image from "next/image";
 
 const events = [
   {
-    image: "/images/events/her_sundays.webp",
-    title: "Her Sundays",
+    image: "/images/events/comedy.jpeg",
+    title: "Comedy Night",
     number: "01",
   },
   {
-    image: "/images/events/impolo.webp",
-    title: "Impolo Yabahlobo",
+    image: "/images/events/nostra.jpeg",
+    title: "LeXhosa Nostra",
     number: "02",
   },
 ]
@@ -23,7 +22,7 @@ const page = () => {
 				{/* biome-ignore lint/a11y/useMediaCaption: <explanation> */}
 				<video
 					muted
-					src="/videos/events.mp4"
+					src="/videos/background-video.mp4"
 					className="object-cover w-full h-dvh"
 					loop
 					autoPlay

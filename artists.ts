@@ -72,7 +72,7 @@ const artists = [
 		name: "Jack Devero",
 		slug: "jack",
 		img: "/images/talent/sq/jack_5.webp",
-		image: "/images/talent/sq/jack_5.webp",
+		image: "/images/talent/slug/jack.webp",
 		width: 314,
 		height: 500,
 		description:
@@ -141,7 +141,7 @@ const artists = [
 		name: "BXB",
 		slug: "bxb",
 		img: "/images/talent/sq/bxb_5.webp",
-		image: "/images/talent/sq/bxb_5.webp",
+		image: "/images/talent/slug/bxb-tall.webp",
 		width: 300,
 		height: 401,
 		description:
