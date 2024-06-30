@@ -37,7 +37,7 @@ const Artists = () => {
   return (
 			<main className="">
 				<div className="flex flex-col h-screen">
-					<div className="container pb-12 text-white pt-36">
+					<div className="container text-white pt-52">
 						<h1
 							className={cn(
 								"mb-4 text-2xl md:text-4xl  lg:text-5xl font-bold text-center",
@@ -83,16 +83,16 @@ const Artists = () => {
 						<div className="relative flex w-full h-full overflow-x-clip">
 							{artists.map((artist, index) => (
 								<motion.div
-									className={cn("absolute flex items-end h-full origin-bottom hover:scale-105 hover:z-[999] duration-300 transition-transform",
+									className={cn("absolute flex items-end h-full origin-bottom hover:scale-125 hover:z-[999] duration-300 transition-transform",
                     index === 0 ? "-left-4 scale-90" : "",
                     index === numArtists - 1 ? "left-[83%] scale-90 -z-[500]" : "",
-                    index === numArtists - 2 ? "left-[70%] z-[600]" : "",
+                    index === numArtists - 2 ? "left-[70%] z-[600] scale-105" : "",
                     index === numArtists - 3 ? "left-[62%] scale-90" : "",
                     index === numArtists - 4 ? "left-[53%]" : "",
                     index === numArtists - 5 ? "left-[42%] scale-90" : "",
-                    index === numArtists - 6 ? "left-[31%]" : "",
-                    index === numArtists - 7 ? "left-[20%]" : "",
-                    index === numArtists - 8 ? "left-[12%]" : "",
+                    index === numArtists - 6 ? "left-[31%] scale-105" : "",
+                    index === numArtists - 7 ? "left-[20%] scale-105" : "",
+                    index === numArtists - 8 ? "left-[12%] scale-90" : "",
                   )}
 									key={artist.name}
 									initial={{ opacity: 0 }}
