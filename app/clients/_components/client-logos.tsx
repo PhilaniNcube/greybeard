@@ -46,7 +46,11 @@ const logos = [
 	},
 	{
 		src: "/images/logos/netflix.png",
-		alt: "Nteflix",
+		alt: "Netflix",
+	},
+	{
+		src: "/images/logos/maracana.webp",
+		alt: "Maracana",
 	},
 ];
 
