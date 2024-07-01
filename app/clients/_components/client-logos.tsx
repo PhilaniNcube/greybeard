@@ -52,6 +52,10 @@ const logos = [
 		src: "/images/logos/maracana.webp",
 		alt: "Maracana",
 	},
+	{
+		src: "/images/logos/La-Parada.webp",
+		alt: "Laparada",
+	},
 ];
 
 const ClientLogos = () => {

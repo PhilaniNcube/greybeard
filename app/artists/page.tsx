@@ -68,9 +68,9 @@ const Artists = () => {
 										"object-cover w-full transition-transform duration-300 z-50",
 										`z-[${index}]`,
 									)}
-									width={578}
-									height={788}
-									src={artist.image}
+									width={500}
+									height={500}
+									src={artist.banner}
 									alt={artist.name}
 								/>
 								<p className="text-2xl text-center text-white sr-only">

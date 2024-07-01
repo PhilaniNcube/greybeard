@@ -24,30 +24,20 @@ const ArtistPage = ({params:{slug}}:{params:{slug:string}}) => {
 						"grid grid-cols-1 gap-10 md:grid-cols-2 relative container h-full",
 					)}
 				>
-					<div className="flex items-end h-full">
+					<div className="flex items-end h-full pt-12">
 						<Image
-							src={artist?.image || ""}
-							width={1000}
-							height={1300}
+							src={artist?.banner || ""}
+							width={600}
+							height={600}
 							alt={artist?.name || ""}
 							className={cn(
-								"mx-auto object-cover w-[45vw] lg:w-[40vw] origin-bottom",
-                artist?.slug === "jack" ? "lg:scale-90 " : "",
-                artist?.slug === "vafa" ? "lg:scale-[85%] " : "",
-                artist?.slug === "sliqe" ? "scale-95" : "",
-                artist?.slug === "bxb" ? "scale-90" : "",
+								"mx-auto object-cover w-[65vw] lg:w-[40vw] origin-bottom",
+
 							)}
 						/>
 					</div>
 					<div className="flex flex-col justify-center lg:h-[800px]">
-						<h1
-							className={cn(
-								"text-2xl lg:text-5xl font-bold uppercase text-white",
-								agrandir.className,
-							)}
-						>
-							{artist?.name}
-						</h1>
+
 						<p className="mt-4 text-sm text-white lg:text-md">
 							{artist?.description}{" "}
 							{artist?.website ? (

@@ -19,7 +19,7 @@ const events = [
 const page = () => {
   return (
 			<main className="relative">
-				{/* biome-ignore lint/a11y/useMediaCaption: <explanation> */}
+
 				<video
 					muted
 					src="/videos/background-video.mp4"

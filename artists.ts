@@ -3,6 +3,7 @@ const artists = [
 		name: "Kele",
 		slug: "kele",
 		img: "/images/talent/sq/kele.webp",
+		banner: "/images/talent/banners/kele.png",
 		image: "/images/talent/sq/kele.webp",
 		width: 576,
 		height: 785,
@@ -21,6 +22,7 @@ const artists = [
 		slug: "sliqe",
 		img: "/images/talent/sq/sliqe.webp",
 		image: "/images/talent/sq/sliqe.webp",
+		banner: "/images/talent/banners/sliqe.png",
 		width: 429,
 		height: 830,
 		description:
@@ -38,6 +40,7 @@ const artists = [
 		slug: "wendy",
 		img: "/images/talent/sq/wendy_tall.webp",
 		image: "/images/talent/sq/wendy_tall.webp",
+		banner: "/images/talent/banners/wendy.png",
 		width: 500,
 		height: 677,
 		description:
@@ -55,6 +58,7 @@ const artists = [
 		slug: "si-jones",
 		img: "/images/talent/sq/si_jones_5.webp",
 		image: "/images/talent/sq/si_jones_5.webp",
+		banner: "/images/talent/banners/si-jones.png",
 		width: 400,
 		height: 600,
 		description:
@@ -73,6 +77,7 @@ const artists = [
 		slug: "jack",
 		img: "/images/talent/sq/jack_5.webp",
 		image: "/images/talent/slug/jack.webp",
+		banner: "/images/talent/banners/jack.png",
 		width: 314,
 		height: 500,
 		description:
@@ -90,6 +95,7 @@ const artists = [
 		slug: "ntosh",
 		img: "/images/talent/sq/ntosh_tall.webp",
 		image: "/images/talent/sq/ntosh_tall.webp",
+		banner: "/images/talent/banners/ntosh.png",
 		width: 400,
 		height: 742,
 		description:
@@ -107,10 +113,11 @@ const artists = [
 		slug: "vafa",
 		img: "/images/talent/sq/vafa.png",
 		image: "/images/talent/sq/vafa.png",
+		banner: "/images/talent/banners/vafa.png",
 		width: 532,
 		height: 974,
 		description:
-			"Meet award winnning Vafa, the comedic maestro who's been rocking stages for over 5 years! His clean comedy isn't just sidesplitting, it's relatability that resonates from coast to coast and beyond. When he's not doing his thing with stand-up, Vafa's crafting sketch comedy that's taking the internet by storm. With millions of views across TikTok, Instagram, and YouTube, he's not just a comedian, he's a viral sensation! Vafa isn't just a stage star—he's your go-to guy for hosting your next big event. From gala dinners to corporate conferences, he's the master of ceremonies who's guaranteed to ramp up the fun. With his quick wit and adaptability, he'll have your audience doubled over with laughter while ensuring your event goes off without a hitch.",
+			"Meet two-time South African Comic’s Choice award winner, Vafa. The comedic maestro has been rocking stages since late 2017! His clean comedy isn't just sidesplitting, it's relatability that resonates from coast to coast and beyond. When he's not doing his thing with stand-up, Vafa's crafting sketch comedy that's taking the internet by storm. With millions of views across TikTok, Instagram, and YouTube, he's not just a comedian, he's a viral sensation! Vafa isn't just a stage star—he's your go-to guy for hosting your next big event. From gala dinners to corporate conferences, he's the master of ceremonies who's guaranteed to ramp up the fun. With his quick wit and adaptability, he'll have your audience doubled over with laughter while ensuring your event goes off without a hitch.",
 		socials: {
 			twitter: "https://twitter.com",
 			instagram: "https://www.instagram.com/vafaafrica",
@@ -125,6 +132,7 @@ const artists = [
 		slug: "benjamin",
 		img: "/images/talent/sq/ben.webp",
 		image: "/images/talent/sq/ben.webp",
+		banner: "/images/talent/banners/ben.png",
 		width: 579,
 		height: 788,
 		description:
@@ -142,6 +150,7 @@ const artists = [
 		slug: "bxb",
 		img: "/images/talent/sq/bxb_5.webp",
 		image: "/images/talent/slug/bxb-tall.webp",
+		banner: "/images/talent/banners/bxb.png",
 		width: 300,
 		height: 401,
 		description:
