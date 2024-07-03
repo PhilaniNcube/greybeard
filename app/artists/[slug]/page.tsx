@@ -24,14 +24,14 @@ const ArtistPage = ({params:{slug}}:{params:{slug:string}}) => {
 						"grid grid-cols-1 gap-10 md:grid-cols-2 relative container h-full",
 					)}
 				>
-					<div className="flex items-end h-full pt-12">
+					<div className="flex items-end h-full lg:py-12">
 						<Image
 							src={artist?.banner || ""}
 							width={600}
 							height={600}
 							alt={artist?.name || ""}
 							className={cn(
-								"mx-auto object-cover w-[65vw] lg:w-[40vw] origin-bottom",
+								"mx-auto object-cover  w-[75vw] lg:w-[40vw] aspect-square origin-bottom",
 
 							)}
 						/>
