@@ -53,8 +53,12 @@ const logos = [
 		alt: "Maracana",
 	},
 	{
-		src: "/images/logos/La-Parada.webp",
+		src: "/images/logos/parada.webp",
 		alt: "Laparada",
+	},
+	{
+		src: "/images/logos/eighty-six.webp",
+		alt: "Eighty Six Public",
 	},
 ];
 

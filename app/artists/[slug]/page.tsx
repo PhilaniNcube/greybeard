@@ -36,7 +36,7 @@ const ArtistPage = ({params:{slug}}:{params:{slug:string}}) => {
 							)}
 						/>
 					</div>
-					<div className="flex flex-col justify-center lg:h-[800px]">
+					<div className="flex flex-col justify-start lg:justify-start lg:pt-56 lg:h-[800px]">
 
 						<p className="mt-4 text-sm text-white lg:text-md">
 							{artist?.description}{" "}

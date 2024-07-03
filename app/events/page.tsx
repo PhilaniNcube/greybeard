@@ -5,14 +5,9 @@ import Image from "next/image";
 
 const events = [
   {
-    image: "/images/events/comedy.jpeg",
-    title: "Comedy Night",
-    number: "01",
-  },
-  {
     image: "/images/events/nostra.jpeg",
-    title: "LeXhosa Nostra",
-    number: "02",
+    title: "LeXhosaNostra",
+    number: "01",
   },
 ]
 
