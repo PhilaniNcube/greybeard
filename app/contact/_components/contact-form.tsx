@@ -1,14 +1,18 @@
-/**
- * v0 by Vercel.
- * @see https://v0.dev/t/ASOLGIZI5yo
- * Documentation: https://v0.dev/docs#integrating-generated-code-into-your-nextjs-app
- */
+"use client";
+
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
+import { sendEmail } from "@/lib/contact-action";
+import { useTransition } from "react";
+import { useToast } from "@/components/ui/use-toast";
 
 export default function ContactForm() {
+
+  const [pending, startTransition] = useTransition();
+  const {toast} = useToast();
+
 	return (
 		<div className="w-full px-4 py-8 md:py-16">
 			<div className="container grid max-w-sm gap-4 px-4 text-white justify-items-center">
@@ -20,12 +24,20 @@ export default function ContactForm() {
 							possible.
 						</p>
 					</div>
-					<form className="w-full space-y-4">
+					<form
+						action={(formData: FormData) => {
+              startTransition(async () => {
+              const res =  await sendEmail(formData);
+                toast({title: "Message sent", description: "We will get back to you soon", color: "#ffffff", style:{color:'white'}}, );
+              });
+						}}
+						className="w-full space-y-4"
+					>
 						<div className="grid grid-cols-2 gap-4">
 							<div className="space-y-2">
-								<Label htmlFor="full-name">Full Name</Label>
+								<Label htmlFor="full_name">Full Name</Label>
 								<Input
-									name="full-name"
+									name="full_name"
 									placeholder="Enter your full name"
 									required
 								/>
@@ -41,8 +53,8 @@ export default function ContactForm() {
 							</div>
 						</div>
 						<div className="space-y-2">
-							<Label htmlFor="contact-number">Contact Number</Label>
-							<Input name="contact-number" placeholder="Enter your number" />
+							<Label htmlFor="contact_number">Contact Number</Label>
+							<Input name="contact_number" placeholder="Enter your number" />
 						</div>
 						<div className="space-y-2">
 							<Label htmlFor="subject">Subject</Label>
@@ -57,11 +69,12 @@ export default function ContactForm() {
 								required
 							/>
 						</div>
-						<Button className="w-full bg-white text-slate-800" type="submit">Submit</Button>
+						<Button className="w-full bg-white text-slate-800 hover:bg-slate-200" type="submit">
+							{pending ? "Sending..." : "Send"}
+						</Button>
 					</form>
 				</div>
 			</div>
 		</div>
 	);
 }
-
