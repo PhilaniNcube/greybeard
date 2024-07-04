@@ -26,17 +26,17 @@ const ArtistPage = ({params:{slug}}:{params:{slug:string}}) => {
 				>
 					<div className="flex items-end h-full lg:py-12">
 						<Image
-							src={artist?.banner || ""}
+							src={artist?.image || ""}
 							width={600}
 							height={600}
 							alt={artist?.name || ""}
 							className={cn(
-								"mx-auto object-cover  w-[75vw] lg:w-[40vw] aspect-square origin-bottom",
+								"mx-auto object-cover mt-8 lg:mt-0 w-[70vw] lg:w-[35vw] origin-bottom",
 
 							)}
 						/>
 					</div>
-					<div className="flex flex-col justify-start lg:justify-start lg:pt-56 lg:h-[800px]">
+					<div className="flex flex-col pb-8 lg:pb-0 justify-start lg:justify-start lg:pt-56 lg:h-[800px]">
 
 						<p className="mt-4 text-sm text-white lg:text-md">
 							{artist?.description}{" "}
