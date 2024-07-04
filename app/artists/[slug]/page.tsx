@@ -24,21 +24,22 @@ const ArtistPage = ({params:{slug}}:{params:{slug:string}}) => {
 						"grid grid-cols-1 gap-10 md:grid-cols-2 relative container h-full",
 					)}
 				>
-					<div className="flex items-end h-full lg:py-12">
+					<div className="flex items-end h-full ">
 						<Image
 							src={artist?.image || ""}
 							width={600}
 							height={600}
 							alt={artist?.name || ""}
 							className={cn(
-								"mx-auto object-cover mt-8 lg:mt-0 w-[70vw] lg:w-[35vw] origin-bottom",
-
+								"mx-auto object-cover mt-8 lg:mt-0  origin-bottom",
+                artist?.slug === "vafa" ? "scale-90" : "",
+                artist?.slug === "jack" ? "scale-95" : "",
 							)}
 						/>
 					</div>
 					<div className="flex flex-col pb-8 lg:pb-0 justify-start lg:justify-start lg:pt-56 lg:h-[800px]">
 
-						<p className="mt-4 text-sm text-white lg:text-md">
+						<p className="max-w-lg mt-4 text-sm text-white lg:text-md">
 							{artist?.description}{" "}
 							{artist?.website ? (
 								<Link href={`${artist?.website}`}>
