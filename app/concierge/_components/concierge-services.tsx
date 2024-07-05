@@ -23,13 +23,13 @@ const ConciergeServices = () => {
   return (
     <section className="relative bg-white">
       <div className="container py-10">
-        <h2 className="mb-4 text-2xl italic font-medium text-center">
+        <h2 className="mb-4 text-2xl italic font-medium text-center text-black">
           We have access to:
         </h2>
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 md:gap-16">
           {services.map((service) => (
             <div className="flex flex-col justify-between w-full group" key={service.name}>
-              <h3 className="mb-3 text-lg font-semibold text-center text-balance line-clamp-2">
+              <h3 className="mb-3 text-lg font-semibold text-center text-black text-balance line-clamp-2">
                 {service.name}
               </h3>
               <div className="relative">
