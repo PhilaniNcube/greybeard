@@ -10,7 +10,7 @@ import { Toaster } from '@/components/ui/toaster'
 
 export const metadata: Metadata = {
   title: 'Greybeard',
-  description: 'Where brands meet cratives',
+  description: 'Where brands meet creatives',
 }
 
 export default function RootLayout({
