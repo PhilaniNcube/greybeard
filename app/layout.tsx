@@ -9,8 +9,10 @@ import { Toaster } from '@/components/ui/toaster'
 
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://greybeardpro.co.za'),
   title: 'Greybeard',
   description: 'Where brands meet creatives',
+
 }
 
 export default function RootLayout({
