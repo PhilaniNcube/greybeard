@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { sendEmail } from "@/lib/contact-action";
 import { useTransition } from "react";
 import { useToast } from "@/components/ui/use-toast";
+import { sendGTMEvent } from '@next/third-parties/google'
 
 export default function ContactForm() {
 
@@ -27,6 +28,7 @@ export default function ContactForm() {
 					<form
 						action={(formData: FormData) => {
               startTransition(async () => {
+                sendGTMEvent({ event: 'generate_lead' })
               const res =  await sendEmail(formData);
                 toast({title: "Message sent", description: "We will get back to you soon", color: "#ffffff", style:{color:'white'}}, );
               });
