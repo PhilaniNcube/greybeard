@@ -3,12 +3,18 @@ import { agrandir } from "../fonts";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import Image from "next/image";
 
+
 const events = [
   {
     image: "/images/events/nostra.jpeg",
     title: "LeXhosaNostra",
     number: "01",
   },
+  {
+   image: '/images/events/her_sundays.webp',
+   title  : "Her Sundays",
+  number : "02"
+  }
 ]
 
 const page = () => {
