@@ -6,15 +6,21 @@ import Image from "next/image";
 
 const events = [
   {
-    image: "/images/events/nostra.jpeg",
-    title: "LeXhosaNostra",
-    number: "01",
-  },
-  {
    image: '/images/events/her_sundays.webp',
    title  : "Her Sundays",
-  number : "02"
-  }
+  number : "01"
+  },
+  {
+    image: "/images/events/comedy.jpeg",
+    title: "Comedy Night",
+    number: "02",
+  },
+  {
+    image: "/images/events/nostra.jpeg",
+    title: "LeXhosaNostra",
+    number: "03",
+  },
+
 ]
 
 const page = () => {
