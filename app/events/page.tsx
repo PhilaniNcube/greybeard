@@ -6,12 +6,12 @@ import Image from "next/image";
 
 const events = [
   {
-   image: '/images/events/her_sundays.webp',
+   image: '/images/events/comedy_27.jpeg',
    title  : "Her Sundays",
   number : "01"
   },
   {
-    image: "/images/events/comedy_27.jpeg",
+    image: "/images/events/comedy.jpeg",
     title: "Comedy Night",
     number: "02",
   },
