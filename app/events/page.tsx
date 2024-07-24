@@ -11,7 +11,7 @@ const events = [
   number : "01"
   },
   {
-    image: "/images/events/comedy.jpeg",
+    image: "/images/events/comedy_27.jpeg",
     title: "Comedy Night",
     number: "02",
   },
