@@ -75,7 +75,7 @@ const artists = [
 	{
 		name: "Jack Devero",
 		slug: "jack",
-		img: "/images/talent/sq/jack_5.webp",
+		img: "/images/talent/sq/jack_tall_2.webp",
 		image: "/images/talent/slug/jack.webp",
 		banner: "/images/talent/banners/jack.png",
 		width: 314,
@@ -111,7 +111,7 @@ const artists = [
 	{
 		name: "Vafa",
 		slug: "vafa",
-		img: "/images/talent/sq/vafa.png",
+		img: "/images/talent/sq/vafa_tall-1.webp",
 		image: "/images/talent/sq/vafa.png",
 		banner: "/images/talent/banners/vafa.png",
 		width: 532,

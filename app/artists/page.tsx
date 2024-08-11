@@ -83,23 +83,31 @@ const Artists = () => {
 						<div className="relative flex w-full h-full overflow-x-clip">
 							{artists.map((artist, index) => (
 								<motion.div
-									className={cn("absolute flex items-end h-full origin-bottom hover:scale-125 hover:z-[999] duration-300 transition-transform",
-                    index === 0 ? "-left-4 scale-90" : "",
-                    index === numArtists - 1 ? "left-[83%] scale-90 -z-[500]" : "",
-                    index === numArtists - 2 ? "left-[70%] z-[600] scale-105" : "",
-                    index === numArtists - 3 ? "left-[62%] scale-90" : "",
-                    index === numArtists - 4 ? "left-[53%]" : "",
-                    index === numArtists - 5 ? "left-[42%] scale-90" : "",
-                    index === numArtists - 6 ? "left-[31%] scale-105" : "",
-                    index === numArtists - 7 ? "left-[20%] scale-105" : "",
-                    index === numArtists - 8 ? "left-[12%] scale-90" : "",
-                  )}
+									className={cn(
+										"absolute flex items-end h-full origin-bottom  hover:z-[999] duration-300 transition-transform",
+										index === 0 ? "-left-4 scale-90 hover:scale-125" : "",
+										index === numArtists - 1
+											? "left-[83%] scale-90 -z-[500] hover:scale-125"
+											: "",
+										index === numArtists - 2
+											? "left-[70%] z-[600] hover:scale-105"
+											: "",
+										index === numArtists - 3
+											? "left-[62%] hover:scale-125"
+											: "",
+										index === numArtists - 4
+											? "left-[53%] scale-90 hover:scale-105"
+											: "",
+										index === numArtists - 5 ? "left-[42%] " : "",
+										index === numArtists - 6 ? "left-[31%] scale-105" : "",
+										index === numArtists - 7 ? "left-[20%] scale-105" : "",
+										index === numArtists - 8 ? "left-[12%] scale-90" : "",
+									)}
 									key={artist.name}
 									initial={{ opacity: 0 }}
 									animate={{ opacity: 1 }}
 									transition={{ duration: index % 2 === 0 ? 1.1 : 5 }}
 									style={{
-
 										zIndex: index === 5 ? 25 : 0,
 									}}
 								>
@@ -113,8 +121,8 @@ const Artists = () => {
 											className={cn(
 												"transition-transform duration-300 w-full h-full object-cover hover:grayscale-0",
 											)}
-											width={600}
-											height={600}
+											width={400}
+											height={742}
 											src={artist.img}
 											alt={artist.name}
 										/>
