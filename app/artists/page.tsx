@@ -82,7 +82,7 @@ const Artists = () => {
 					<div className="md:h-[475px] hidden lg:block ">
 						<div className="relative flex w-full h-full overflow-x-clip">
 							{artists.map((artist, index) => (
-								<motion.div
+								<div
 									className={cn(
 										"absolute flex items-end h-full origin-bottom  hover:z-[999] duration-300 transition-transform",
 										index === 0 ? "-left-4 scale-90 hover:scale-125" : "",
@@ -104,9 +104,7 @@ const Artists = () => {
 										index === numArtists - 8 ? "left-[12%] scale-90" : "",
 									)}
 									key={artist.name}
-									initial={{ opacity: 0 }}
-									animate={{ opacity: 1 }}
-									transition={{ duration: index % 2 === 0 ? 1.1 : 5 }}
+					
 									style={{
 										zIndex: index === 5 ? 25 : 0,
 									}}
@@ -158,7 +156,7 @@ const Artists = () => {
 											alt={artist.name}
 										/>
 									</Link> */}
-								</motion.div>
+								</div>
 							))}
 						</div>
 					</div>

@@ -113,24 +113,9 @@ gsap.registerPlugin(ScrollTrigger);
 
       <div className="relative flex w-full h-[100vh] bg-black isolate overflow-hidden">
         <AnimatePresence>
-          <motion.div
+          <div
             key={currentSlide}
-            layoutId={`${currentSlide}`}
-            initial={{
-              scale: 0.8,
-              skewX: "-5deg",
-              x: "100%",
-            }}
-            animate={{
-              scale: 1,
-              x: 0,
-              skewX: "0deg",
-            }}
-            exit={{ scale: 0.8, x: "-100%", skewX: "5deg" }}
-            translate="yes"
-            transition={{
-              duration: 0.8,
-            }}
+            
             className="absolute w-full h-full "
           >
             <Image
@@ -146,7 +131,7 @@ gsap.registerPlugin(ScrollTrigger);
             {/* <Button className="text-xl text-white uppercase bg-transparent border border-white hover:bg-white hover:text-black">
               Learn More
             </Button> */}
-          </motion.div>
+          </div>
         </AnimatePresence>
         <div className="absolute z-40 flex items-center justify-center w-full gap-x-4 bottom-5">
           {slides.map((_, index) => (

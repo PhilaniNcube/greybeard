@@ -39,17 +39,17 @@ const FirendsHero = () => {
       <div className="container min-h-dvh">
         <div className="flex items-center justify-start h-full">
           <div className="hidden lg:block -translate-x-[110px]">
-            <motion.h1
-              initial={{ opacity: 0, color: "#000000" }}
-              animate={{ opacity: 1, color: "#ffffff" }}
-              transition={{ duration: 1.6 }}
+            <h1
+              // initial={{ opacity: 0, color: "#000000" }}
+              // animate={{ opacity: 1, color: "#ffffff" }}
+              // transition={{ duration: 1.6 }}
               className={cn(
                 "text-4xl font-extrabold tracking-wider text-white uppercase rotate-90 lg:text-7xl line-height-7"
               ,agrandir.className)}
             >
               Friends <br />
               Of Grey
-            </motion.h1>
+            </h1>
           </div>
           <div className="grid flex-1 flex-shrink-0 grid-cols-1 gap-10 py-20 sm:grid-cols-2 lg:grid-cols-3">
             {friends.map((item, index) => (

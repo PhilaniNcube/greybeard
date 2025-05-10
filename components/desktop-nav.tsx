@@ -33,7 +33,7 @@ export default function Desktop() {
 
 
   return (
-			<motion.div
+			<div
 				className={cn(
 					"fixed top-0 left-0 right-0 z-[9999] hidden shadow-md lg:flex backdrop-blur-md duration-300 transition-colors",
 				    scrollYDepth > 50 ? "bg-black/90" : "",)}
@@ -119,6 +119,6 @@ export default function Desktop() {
 						</div>
 					</div>
 				</nav>
-			</motion.div>
+			</div>
 		);
 }
