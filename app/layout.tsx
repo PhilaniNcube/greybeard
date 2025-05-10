@@ -26,10 +26,10 @@ export default function RootLayout({
 			<html lang="en">
 				<body className={`${agrandir.className} bg-black text-white`}>
           <GoogleTagManager gtmId="GTM-57WZT4L4" />
-					<Desktop />
-					<MobileNavbar />
+					{/* <Desktop /> */}
+					{/* <MobileNavbar /> */}
 					{children}
-          <Toaster  />
+          {/* <Toaster  /> */}
 				</body>
 			</html>
 		);

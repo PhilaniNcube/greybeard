@@ -36,7 +36,7 @@ export async function sendEmail(formData:FormData){
 									message: message,
 									contact_number: contact_number,
 									subject: subject,
-								}) as React.ReactElement,
+								}) as React.ReactElement<any>,
 							});
 
               console.log({data, error});
